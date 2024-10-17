@@ -9,6 +9,8 @@
   pre {
     font-size: 0.75rem;
     margin-bottom: 0;
+    white-space: normal;
+    max-width: 50rem;
 
     code {
       color: #eee;
@@ -17,7 +19,7 @@
 
   .copy-button-container {
     position: absolute;
-    right: -5px;
-    top: -20px;
+    right: 1rem;
+    top: -1rem;
   }
 }
