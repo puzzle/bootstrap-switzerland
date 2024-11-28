@@ -153,7 +153,7 @@ L'elemento `.it-thumb` con all'interno la relativa immagine, precede l'elemento 
     <li>
       <div class="list-item">
         <div class="it-thumb">
-          <img src="https://placehold.co/40x40.png?text=40x40"" alt="descrizione immagine">
+          <img src="https://placehold.co/40x40.png?text=40x40" alt="descrizione immagine">
         </div>
         <div class="it-right-zone">
           <span class="text">Testo</span>
@@ -163,7 +163,7 @@ L'elemento `.it-thumb` con all'interno la relativa immagine, precede l'elemento 
     <li>
       <a href="#" class="list-item">
         <div class="it-thumb">
-          <img src="https://placehold.co/40x40.png?text=40x40"" alt="descrizione immagine">
+          <img src="https://placehold.co/40x40.png?text=40x40" alt="descrizione immagine">
         </div>
         <div class="it-right-zone">
           <span class="text">Link</span>
@@ -173,7 +173,7 @@ L'elemento `.it-thumb` con all'interno la relativa immagine, precede l'elemento 
     <li>
       <a class="list-item" href="#">
         <div class="it-thumb">
-          <img src="https://placehold.co/40x40.png?text=40x40"" alt="descrizione immagine">
+          <img src="https://placehold.co/40x40.png?text=40x40" alt="descrizione immagine">
         </div>
         <div class="it-right-zone">
           <span class="text">Link attivo</span>
@@ -378,7 +378,7 @@ L'elemento `.metadata`, segue l'elemento `.text`.
     </li>
     <li>
       <a class="list-item" href="#">
-        <div class="avatar size-lg"
+        <div class="avatar size-lg">
           <img src="https://randomuser.me/api/portraits/women/41.jpg" alt="Anna Barbieri">
         </div>
         <div class="it-right-zone">
@@ -396,9 +396,9 @@ L'elemento `.metadata`, segue l'elemento `.text`.
 Per avere una lista che permetta paragrafi di testo aggiuntivo per ogni elemento, bisogna utilizzare un approccio con titolo (heading) e paragrafo `<p>`, mantenendo la classe `.text` per l'elementi titolo. Entrambi devono essere inclusi in un elemento `<div>` per il corretto allineamento.
 
 {% capture callout %}
- #### Breaking feature dalla versione **2.11.y**
+Breaking feature dalla versione **2.11**
 
- Il codice markup è stato rivisto in chiave accessibilità e robustezza. In particolare cosa cambia: 
+Il codice markup è stato rivisto in chiave accessibilità e robustezza. In particolare cosa cambia: 
    - L'elemento `.text` è ora implementato come heading `h` e non semplice `<span>`. Dovrà avere il livello intestazione corretto a seconda della gerarchia in pagina.
  {% endcapture %}{% include callout.html content=callout type="danger" %}
 

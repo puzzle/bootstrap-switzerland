@@ -1,5 +1,13 @@
-import SelectorEngine from 'bootstrap/js/src/dom/selector-engine'
-import { isVisible } from 'bootstrap/js/src/util'
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap Italia (https://italia.github.io/bootstrap-italia/)
+ * Authors: https://github.com/italia/bootstrap-italia/blob/main/AUTHORS
+ * Licensed under BSD-3-Clause license (https://github.com/italia/bootstrap-italia/blob/main/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
+import SelectorEngine from './dom/selector-engine'
+import { isVisible } from './util/index'
 
 import Sticky from './sticky'
 
@@ -17,7 +25,6 @@ const SELECTOR_SEARCH_WRAPPER = '.it-search-wrapper'
 const SELECTOR_USER_WRAPPER = '.it-user-wrapper'
 const SELECTOR_CLONED = `.${CLASS_NAME_CLONED_HEADER}`
 
-// eslint-disable-next-line no-undef
 const dataSet = new Map()
 
 class HeaderSticky {
