@@ -52,9 +52,9 @@ $color-contrast-light: $white !default;
 
 // PRIMARY COLORS DEFINITION //
 $primary-h: 358 !default;
-$primary-s: 72 !default;
-$primary-b: 49 !default;
-$primary-l: 49 !default; // Kit UI
+$primary-s: 84 !default;
+$primary-b: 85 !default;
+$primary-l: 85 !default; // Kit UI
 
 $primary: hsb($primary-h, $primary-s, $primary-b) !default; // primary 600
 
