@@ -394,14 +394,14 @@ textarea {
 
     &:checked + label {
       &::after {
-        border-color: $primary;
-        background-color: $primary;
+        border-color: $secondary;
+        background-color: $secondary;
         z-index: 0;
         transform: scale(0.64);
       }
 
       &::before {
-        border-color: $primary;
+        border-color: $secondary;
       }
     }
 
