@@ -634,11 +634,11 @@ $display-font-weight: 300 !default;
 $display-line-height: $headings-line-height !default;
 
 // Border Radius - using pixels instead or rems as it has to be consistent across devices
-$border-radius: 4px !default;
-$border-radius-sm: 2px !default;
-$border-radius-lg: 8px !default;
-$border-radius-xl: 1rem !default;
-$border-radius-2xl: 2rem !default;
+$border-radius: 1px !default;
+$border-radius-sm: 1px !default;
+$border-radius-lg: 1px !default;
+$border-radius-xl: 1px !default;
+$border-radius-2xl: 1px !default;
 $border-radius-pill: 50rem !default;
 $radius-rounded: 40px;
 
