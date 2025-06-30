@@ -10,19 +10,21 @@
 $black: hsl(0, 0%, 0%) !default;
 $white: hsl(0, 0%, 100%) !default;
 
-$gray-100: hsl(0, 0%, 96%) !default; // color-gray-96
-$gray-200: hsl(0, 0%, 90%) !default; // color-gray-90
-$gray-300: hsl(0, 0%, 83%) !default; // color-gray-83
-$gray-400: hsl(0, 0%, 64%) !default; // color-gray-64
-$gray-500: hsl(0, 0%, 45%) !default; // color-gray-45
-$gray-600: hsl(0, 0%, 32%) !default; // color-gray-32
-$gray-700: hsl(0, 0%, 25%) !default; // color-gray-25
-$gray-800: hsl(0, 0%, 15%) !default; // color-gray-15
-$gray-900: hsl(0, 0%, 10%) !default; // color-gray-10
+$gray-50: hsl(206, 30%, 95%) !default; // secondary 50
+$gray-100: hsl(210, 19%, 89%) !default; // secondary 100
+$gray-200: hsl(212, 11%, 71%) !default; // secondary 200
+$gray-300: hsl(210, 11%, 56%) !default; // secondary 300
+$gray-400: hsl(209, 15%, 41%) !default; // secondary 400
+$gray-500: hsl(209, 21%, 35%) !default; // secondary 500
+$gray-600: hsl(209, 29%, 26%) !default; // secondary 600
+$gray-700: hsl(209, 29%, 21%) !default; // secondary 700
+$gray-800: hsl(210, 30%, 16%) !default; // secondary 800
+$gray-900: hsl(208, 28%, 10%) !default; // secondary 900
 
 $grays: () !default;
 $grays: map-merge(
   (
+    '50': $gray-50,
     '100': $gray-100,
     '200': $gray-200,
     '300': $gray-300,
