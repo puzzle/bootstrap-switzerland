@@ -1790,10 +1790,10 @@ $modal-popconfirm-max-width: 300px;
 // Header Slim
 $header-general-padding: $v-gap * 3;
 $header-slim-height: 48px;
-$header-slim-bg-color: $primary-a7 !default;
+$header-slim-bg-color: $secondary !default;
 $header-slim-text-color: $white !default;
-$header-slim-button-color: $primary-a9 !default;
-$header-slim-button-hover-color: $primary-a8 !default;
+$header-slim-button-color: $gray-400 !default;
+$header-slim-button-hover-color: $gray-600 !default;
 $header-slim-brand-text-size: 0.875rem;
 $header-slim-icon-size: 18px;
 $header-slim-padding-desk: 3px $v-gap * 3;
