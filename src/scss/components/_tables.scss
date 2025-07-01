@@ -21,7 +21,7 @@
   border-color: var(--#{$prefix}table-border-color);
 
   @include media-breakpoint-up(lg) {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
   //table styles go here
   .table-dark {
