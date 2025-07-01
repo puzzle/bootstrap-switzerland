@@ -94,8 +94,7 @@ input[type='text'],
 input[type='time'],
 input[type='url'],
 textarea {
-  border: none;
-  border-bottom: 1px solid $input-border;
+  border: 1px solid $input-border;
   padding: $input-spacing-y $input-spacing-x;
   outline: 0;
   box-shadow: none;
