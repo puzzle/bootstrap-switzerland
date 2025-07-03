@@ -1,4 +1,18 @@
-# Bootstrap Italia
+# Bootstrap Switzerland
+
+This project is a fork of  [italia/bootstrap-italia](https://github.com/italia/bootstrap-italia), customized to align with the Design System of the Swiss Confederation 🇨🇭.
+
+For details about the Swiss Design System, see:
+
+- [Design System for the Swiss Confederation (GitHub)](https://github.com/swiss/designsystem)
+- [Design System for the Swiss Confederation (Stoybook)](https://swiss.github.io/designsystem/?path=/docs/get-started--docs)
+- [Design System Core Library (Figma)](https://www.figma.com/design/3UYgqxmcJbG0hpWuti3y8U/🇨🇭Design-System-Core-Library)
+
+For a preview and comprehensive documentation of the theme, visit: https://puzzle.github.io/bootstrap-switzerland/
+
+Below is the original README for the Italian version.
+
+---
 
 [![Versione](https://img.shields.io/npm/v/bootstrap-italia.svg?logo=npm)](https://www.npmjs.com/package/bootstrap-italia)
 [![Build](https://github.com/italia/bootstrap-italia/actions/workflows/build.yml/badge.svg)](https://github.com/italia/bootstrap-italia/actions)
