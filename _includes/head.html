@@ -11,7 +11,7 @@
   {%- endif -%}
 </title>
 <!-- Bootstrap core CSS -->
-<link href="{{ site.baseurl }}/dist/css/bootstrap-italia.min.css?{{ buildTime }}" rel="stylesheet" />
+<link href="{{ site.baseurl }}/dist/css/bootstrap-switzerland.min.css?{{ buildTime }}" rel="stylesheet" />
 
 <!-- Documentation extras -->
 {% if page.layout == "docs" %} {% comment %}La ricerca è gestita con Algolia DocSearch https://github.com/algolia/docsearch{% endcomment %}
@@ -22,7 +22,7 @@
 {% include favicons.html %} {% include social.html %}
 
 {% if jekyll.environment == "production" %}
-<script type="text/javascript">
+<!--<script type="text/javascript">
   var _paq = window._paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(['trackPageView']);
@@ -34,7 +34,7 @@
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
-</script>
+</script>-->
 {% else %}
 <!-- Noindex -->
 <meta name="robots" content="noindex, nofollow" />

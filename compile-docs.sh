@@ -1,8 +1,8 @@
 #!/bin/bash
 
-git clone https://github.com/italia/bootstrap-italia.git
+git clone https://github.com/puzzle/bootstrap-switzerland.git
 
-cd bootstrap-italia
+cd bootstrap-switerland
 
 git checkout 1.x
 
@@ -10,4 +10,4 @@ npm i && bundle install && npm run build && JEKYLL_ENV=production bundle exec je
 
 cd ..
 
-mv bootstrap-italia/_site ./_site/1.x
+mv bootstrap-switzerland/_site ./_site/1.x

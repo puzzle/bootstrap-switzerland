@@ -1,5 +1,5 @@
 {% assign buildTime = site.time | date: '%Y%m%d%H%M' %}
-<script src="{{ site.baseurl }}/dist/js/bootstrap-italia.bundle.min.js?{{ buildTime }}"></script>
+<script src="{{ site.baseurl }}/dist/js/bootstrap-switzerland.bundle.min.js?{{ buildTime }}"></script>
 <script>
   bootstrap.loadFonts('{{ site.baseurl }}/dist/fonts')
 </script>
@@ -38,7 +38,7 @@ https://github.com/algolia/docsearch{% endcomment %}
     indexName: "italiaio",
     container: "#search-input",
     placeholder: "Cerca nella documentazione",
-    debug: false, 
+    debug: false,
     translations: {
       button: {
         buttonText: 'Cerca componenti, classi, informazioni...',
@@ -146,7 +146,7 @@ https://github.com/algolia/docsearch{% endcomment %}
       /**
        * Snippet
        * {% capture example %}
-       * {% endcapture %}{% include example.html content=example %}  
+       * {% endcapture %}{% include example.html content=example %}
        */
       if (node.nodeName == 'FIGURE') {
         node.insertBefore(divContainer, node.querySelector('pre'));
@@ -154,7 +154,7 @@ https://github.com/algolia/docsearch{% endcomment %}
       /*
       * Snippet
       * ```html
-      * ``` 
+      * ```
       */
       else if (node.nodeName == 'PRE') {
         node.classList.remove("highlight");
