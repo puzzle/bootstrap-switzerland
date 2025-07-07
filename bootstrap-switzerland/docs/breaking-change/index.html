@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="Bootstrap Switzerland ist ein Fork von Bootstrap Italia. Das Theme wurde auf Basis des Swiss Design Systems neu gestaltet." />
+<meta name="author" content="" />
+<meta name="generator" content="Jekyll v4.2.1" />
+
+<title>Breaking change · Bootstrap Switzerland</title>
+<!-- Bootstrap core CSS -->
+<link href="/bootstrap-switzerland/dist/css/bootstrap-switzerland.min.css?202507071531" rel="stylesheet" />
+
+<!-- Documentation extras -->
+ 
+<link href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" rel="stylesheet" />
+
+<link href="/bootstrap-switzerland/docs/assets/dist/css/docs.min.css?202507071531" rel="stylesheet" />
+
+<!-- Favicons -->
+<link rel="icon" href="/bootstrap-switzerland/favicon.ico" />
+<link rel="icon" href="/bootstrap-switzerland/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bootstrap-switzerland/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="apple-touch-icon" href="/bootstrap-switzerland/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bootstrap-switzerland/site.webmanifest" />
+<meta name="msapplication-config" content="/bootstrap-switzerland/browserconfig.xml" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="theme-color" content="#ffffff" />
+ <!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:title" content="Breaking change" />
+<meta name="twitter:description" content="Bootstrap Switzerland ist ein Fork von Bootstrap Italia. Das Theme wurde auf Basis des Swiss Design Systems neu gestaltet." />
+<meta name="twitter:image" content="/docs/assets/img/favicons/social-card.png" />
+
+<!-- Facebook -->
+<meta property="og:url" content="/bootstrap-switzerland/docs/breaking-change/" />
+<meta property="og:title" content="Breaking change" />
+<meta property="og:description" content="Bootstrap Switzerland ist ein Fork von Bootstrap Italia. Das Theme wurde auf Basis des Swiss Design Systems neu gestaltet." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/docs/assets/img/favicons/social-card.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+
+
+<!--<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>-->
+
+
+  </head>
+  <body>
+    <a id="skippy" class="visually-hidden-focusable" href="#content">
+      <div class="container">
+        <span class="skiplink-text">Vai al contenuto principale</span>
+      </div>
+    </a>
+
+    <nav class="navbar-institutional navbar navbar-expand-lg navbar-dark py-1 px-3">
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarsTop"
+    aria-controls="navbarsTop"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<!--  <div>
+    <a class="navbar-brand text-decoration-none" href="https://innovazione.gov.it/"
+      >Dipartimento <span class="d-none d-lg-inline">per la Trasformazione </span>Digitale</a
+    >
+    <span class="navbar-brand text-white"> + </span>
+    <a class="navbar-brand text-decoration-none" href="http://agid.gov.it/">AgID</a>
+  </div>-->
+  <div class="collapse navbar-collapse" id="navbarsTop">
+    <ul class="navbar-nav ms-auto">
+<!--      <li class="nav-item nav-item-w-divider">
+        <a class="nav-link text-decoration-none" href="https://pianotriennale-ict.italia.it/">Piano Triennale</a>
+      </li>-->
+      <li class="nav-item">
+        <a class="nav-link text-decoration-none" href="https://www.puzzzle.ch/">Developers</a>
+      </li>
+<!--      <li class="nav-item nav-item-w-divider">
+        <a class="nav-link text-decoration-none" href="http://designers.italia.it/">Designers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-decoration-none" href="https://forum.italia.it/">Forum</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-decoration-none" href="https://docs.italia.it/">Docs</a>
+      </li>-->
+      <li class="nav-item">
+        <a class="nav-link text-decoration-none" href="https://github.com/puzzle/">GitHub</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+ <header class="navbar-main navbar navbar-dark bd-navbar px-3 bd-navbar--slim">
+  <div class="container">
+    <a class="navbar-brand py-2 text-decoration-none" href="/bootstrap-switzerland/" aria-label="Bootstrap Switzerland Homepage"
+      title="Bootstrap Switzerland Homepage">
+      <div class="d-flex flex-row">
+        <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 74"
+  
+   height="48"
+  >
+  <g fill="#FFF">
+    <path d="M31.799 71.9V15.7h15.1V72h-15.1zM91.099 28.5h-13.8v23.1c0 2.3.1 3.8.2 4.8.1.9.5 1.7 1.2 2.4s1.8 1 3.3 1l8.6-.2.7 12c-5 1.1-8.9 1.7-11.5 1.7-6.8 0-11.4-1.5-13.8-4.6-2.5-3-3.7-8.6-3.7-16.8V0h15.1v15.6h13.8v12.9zM9.099 32.8c-2.6 0-4.8-.9-6.5-2.7s-2.6-4-2.6-6.6.9-4.8 2.5-6.6c1.7-1.8 3.9-2.6 6.5-2.6s4.8.9 6.5 2.7 2.5 4 2.5 6.7-.8 4.8-2.5 6.6c-1.6 1.6-3.7 2.5-6.4 2.5z"></path>
+  </g>
+</svg>
+-->
+        <div class="d-flex flex-column ps-3 ps-sm-4">
+          <h1 class="bd-logo-title">Bootstrap Switzerland</h1>
+          <h2 class="bd-logo-subtitle">A Bootstrap theme based on the design system of the Swiss Confederation.</h2>
+        </div>
+      </div>
+    </a>
+
+    
+    <button class="btn btn-xs btn-primary d-md-none px-2 text-uppercase" type="button" data-bs-toggle="collapse"
+      data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false"
+      aria-label="Toggle docs navigation">
+      menu
+    </button>
+    
+
+    <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
+<!--      <li class="nav-item pe-2">
+        <a title="Scarica Bootstrap Italia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
+          href="https://github.com/italia/bootstrap-italia/releases/download/v2.16.0/bootstrap-italia.zip"
+          aria-label="Download">
+          <small class="pe-2 m-0">v2.16.0</small>
+          <svg class="icon icon-sm icon-light">
+            <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-download"
+              xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-download"></use>
+          </svg><span class="visually-hidden">Download</span>
+        </a>
+      </li>-->
+      <li class="nav-item pe-2">
+        <a title="Repository GitHub di Bootstrap Switzerland" data-toggle="tooltip"
+          class="nav-link d-flex align-items-center" href="https://github.com/puzzle/bootstrap-switzerland/" target="_blank" rel="noopener noreferrer"
+          aria-label="GitHub">
+          <svg class="icon icon-sm icon-light">
+            <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-github"
+              xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-github"></use>
+          </svg><span class="visually-hidden">GitHub</span>
+        </a>
+      </li>
+    </ul>
+
+    
+
+
+    <div onclick="document.querySelector('#search-input > button').click()" class="search-in-docs">
+      <a aria-current="page" href="#" class="search-link rounded-icon" aria-label="Cerca nel sito"
+         data-focus-mouse="false"><svg role="img" class="icon icon-sm icon-primary">
+          <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-search"></use>
+        </svg><span class="search-in-docs--label">Cerca nella documentazione</span></a>
+    </div>
+
+    <div id="search-input"></div>
+    
+  </div>
+</header>
+
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar"><nav class="collapse bd-links" id="bd-docs-nav"><div class="sidebar-wrapper">
+    <h3 class="no_toc">Documentazione</h3>
+    <div class="sidebar-linklist-wrapper">
+      <div class="link-list-wrapper">
+        <ul class="link-list"><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-1"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-1"
+              aria-expanded="false"
+              aria-controls="collapse-1"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Come iniziare</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-1"><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/come-iniziare/introduzione/">
+                  <span>Introduzione</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/come-iniziare/strumenti-di-compilazione/">
+                  <span>Strumenti di compilazione</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/come-iniziare/personalizzazione-della-libreria/">
+                  <span>Personalizzazione della libreria</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/come-iniziare/modificare-componenti/">
+                  <span>Modificare Componenti</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/come-iniziare/migrazione-dalla-versione-1/">
+                  <span>Migrazione dalla versione 1</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-switzerland/docs/breaking-change/"><span>Breaking change</span></a>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-3"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-3"
+              aria-expanded="false"
+              aria-controls="collapse-3"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Organizzare gli spazi</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-3"><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/introduzione/">
+                  <span>Introduzione</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/allineamento-verticale/">
+                  <span>Allineamento verticale</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/bordi/">
+                  <span>Bordi</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/clearfix/">
+                  <span>Clearfix</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/dimensionamento/">
+                  <span>Dimensionamento</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/display/">
+                  <span>Display</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/flex/">
+                  <span>Flex</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/float/">
+                  <span>Float</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/griglie/">
+                  <span>Griglie</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/ombreggiature/">
+                  <span>Ombreggiature</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/posizionamento/">
+                  <span>Posizionamento</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/proporzioni/">
+                  <span>Proporzioni</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/spaziature/">
+                  <span>Spaziature</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-4"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-4"
+              aria-expanded="false"
+              aria-controls="collapse-4"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Organizzare i contenuti</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-4"><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-i-contenuti/introduzione/">
+                  <span>Introduzione</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-i-contenuti/codice/">
+                  <span>Codice</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-i-contenuti/immagini/">
+                  <span>Immagini</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-i-contenuti/liste/">
+                  <span>Liste</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-i-contenuti/liste-di-immagini/">
+                  <span>Liste di immagini</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-i-contenuti/tabelle/">
+                  <span>Tabelle</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-i-contenuti/testo/">
+                  <span>Testo</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-i-contenuti/tipografia/">
+                  <span>Tipografia</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-5"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-5"
+              aria-expanded="false"
+              aria-controls="collapse-5"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Menu di navigazione</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-5"><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/introduzione/">
+                  <span>Introduzione</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/bottomnav/">
+                  <span>BottomNav</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/breadcrumbs/">
+                  <span>Breadcrumbs</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/forward/">
+                  <span>Forward</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/header/">
+                  <span>Header</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/megamenu/">
+                  <span>Megamenu</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/footer/">
+                  <span>Footer</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/navscroll/">
+                  <span>Navscroll</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/sidebar/">
+                  <span>Sidebar</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/skiplinks/">
+                  <span>Skiplinks</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/thumbnav/">
+                  <span>Thumbnav</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/toolbar/">
+                  <span>Toolbar</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/torna-indietro/">
+                  <span>Torna indietro</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/torna-su/">
+                  <span>Torna su</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-6"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-6"
+              aria-expanded="false"
+              aria-controls="collapse-6"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Componenti</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-6"><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/introduzione/">
+                  <span>Introduzione</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/accordion/">
+                  <span>Accordion</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/affix/">
+                  <span>Affix</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/alert/">
+                  <span>Alert</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/avatar/">
+                  <span>Avatar</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/badge/">
+                  <span>Badge</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/buttons/">
+                  <span>Buttons</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/card/">
+                  <span>Card</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/callout/">
+                  <span>Callout</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/carousel/">
+                  <span>Carousel</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/chips/">
+                  <span>Chips</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/collapse/">
+                  <span>Collapse</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/cookiebar/">
+                  <span>Cookiebar</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/dimmer/">
+                  <span>Dimmer</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/dropdown/">
+                  <span>Dropdown</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/hero/">
+                  <span>Hero</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/modale/">
+                  <span>Modale</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/notifiche/">
+                  <span>Notifiche</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/overlay/">
+                  <span>Overlay</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/paginazione/">
+                  <span>Paginazione</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/popover/">
+                  <span>Popover</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/progress-indicators/">
+                  <span>Progress Indicators</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/rating/">
+                  <span>Rating</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/sections/">
+                  <span>Sections</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/steppers/">
+                  <span>Steppers</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/sticky/">
+                  <span>Sticky</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/tab/">
+                  <span>Tab</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/timeline/">
+                  <span>Timeline</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/tooltip/">
+                  <span>Tooltip</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/video-player/">
+                  <span>Video Player</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-7"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-7"
+              aria-expanded="false"
+              aria-controls="collapse-7"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Form</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-7"><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/introduzione/">
+                  <span>Introduzione</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/input/">
+                  <span>Input</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/input-numerico/">
+                  <span>Input Numerico</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/input-calendario/">
+                  <span>Input Calendario</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/input-ora/">
+                  <span>Input Ora</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/autocompletamento/">
+                  <span>Autocompletamento</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/upload/">
+                  <span>Upload</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/radio-button/">
+                  <span>Radio Button</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/select/">
+                  <span>Select</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/checkbox/">
+                  <span>Checkbox</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/toggles/">
+                  <span>Toggles</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/transfer/">
+                  <span>Transfer</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-8"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-8"
+              aria-expanded="false"
+              aria-controls="collapse-8"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Utilities</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-8"><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/utilities/colori/">
+                  <span>Colori</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/utilities/colori-custom/">
+                  <span>Colori Custom</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/utilities/icone/">
+                  <span>Icone</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-switzerland/docs/esempi/"><span>Esempi</span></a>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-switzerland/docs/progetti/"><span>Progetti</span></a>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-switzerland/docs/informazioni/"><span>Informazioni</span></a>
+            
+          </li></ul>
+      </div>
+    </div>
+  </div>
+</nav>
+</div>
+
+         <div class="d-none d-xl-block col-xl-2 bd-toc">
+  <div class="sidebar-wrapper">
+    <h3>Breaking change</h3>
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#2160">2.16.0</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#card">Card</a></li>
+<li class="toc-entry toc-h3"><a href="#carousel">Carousel</a></li>
+<li class="toc-entry toc-h3"><a href="#dimmer">Dimmer</a></li>
+<li class="toc-entry toc-h3"><a href="#hero">Hero</a></li>
+<li class="toc-entry toc-h3"><a href="#sections">Sections</a></li>
+<li class="toc-entry toc-h3"><a href="#timeline">Timeline</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#2150">2.15.0</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#header">Header</a></li>
+<li class="toc-entry toc-h3"><a href="#megamenu">Megamenu</a></li>
+<li class="toc-entry toc-h3"><a href="#navscroll">Navscroll</a></li>
+<li class="toc-entry toc-h3"><a href="#sticky">Sticky</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#2140">2.14.0</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#autocompletamento">Autocompletamento</a></li>
+<li class="toc-entry toc-h3"><a href="#carousel-1">Carousel</a></li>
+<li class="toc-entry toc-h3"><a href="#generale">Generale</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#2130">2.13.0</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#input-numerico">Input numerico</a></li>
+<li class="toc-entry toc-h3"><a href="#steppers">Steppers</a></li>
+<li class="toc-entry toc-h3"><a href="#tab">Tab</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#2120">2.12.0</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#rating">Rating</a></li>
+<li class="toc-entry toc-h3"><a href="#torna-su">Torna su</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#2110">2.11.0</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#input">Input</a></li>
+<li class="toc-entry toc-h3"><a href="#liste">Liste</a></li>
+<li class="toc-entry toc-h3"><a href="#liste-di-immagini">Liste di immagini</a></li>
+<li class="toc-entry toc-h3"><a href="#timeline-1">Timeline</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#2100">2.10.0</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#checkbox">Checkbox</a></li>
+<li class="toc-entry toc-h3"><a href="#input-1">Input</a></li>
+<li class="toc-entry toc-h3"><a href="#liste-1">Liste</a></li>
+<li class="toc-entry toc-h3"><a href="#radio-button">Radio button</a></li>
+<li class="toc-entry toc-h3"><a href="#toggles">Toggles</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#280">2.8.0</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#avatar">Avatar</a></li>
+<li class="toc-entry toc-h3"><a href="#header-1">Header</a></li>
+<li class="toc-entry toc-h3"><a href="#input-2">Input</a></li>
+<li class="toc-entry toc-h3"><a href="#liste-2">Liste</a></li>
+<li class="toc-entry toc-h3"><a href="#megamenu-1">Megamenu</a></li>
+<li class="toc-entry toc-h3"><a href="#navscroll-1">Navscroll</a></li>
+<li class="toc-entry toc-h3"><a href="#paginazione">Paginazione</a></li>
+<li class="toc-entry toc-h3"><a href="#sidebar">Sidebar</a></li>
+<li class="toc-entry toc-h3"><a href="#transfer">Transfer</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#240">2.4.0</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#callout">Callout</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#230">2.3.0</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#steppers-1">Steppers</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#220">2.2.0</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#input-3">Input</a></li>
+<li class="toc-entry toc-h3"><a href="#generale-1">Generale</a></li>
+</ul>
+</li>
+</ul>
+  </div>
+</div>
+ 
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
+          <h1 class="bd-title" id="content">Breaking change</h1>
+          <p class="lead"></p>
+          <p>Di seguito saranno mostrate le principali breaking change di ogni versione.</p>
+
+<h2 id="2160">2.16.0</h2>
+
+<p><a href="https://github.com/italia/bootstrap-italia/releases/tag/v2.16.0">Changelog completo</a> <svg class="icon steppers-success" aria-hidden="true"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-file"></use></svg></p>
+
+<h3 id="card">Card</h3>
+
+<p>Questo è un nuovo componente card definito dalle classi <code class="language-plaintext highlighter-rouge">.it-card</code> e relativi modificatori.</p>
+
+<p>Le classi legacy di Bootstrap <code class="language-plaintext highlighter-rouge">.card</code> sono ora deprecate ma <strong>saranno mantenute nei fogli di stile fino al prossimo rilascio maggiore, per permettere una migrazione graduale</strong>.</p>
+
+<p>Per migrare le tue card dalle deprecate <code class="language-plaintext highlighter-rouge">.card</code> alle nuove <code class="language-plaintext highlighter-rouge">.it-card</code> (v2.16.0) considera prima di tutto i cambi strutturali. Prima era:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Card base minimal --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-wrapper"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"card-title h5 "</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text font-serif"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Adesso:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Card base minimal --&gt;</span>
+<span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"it-card rounded shadow-sm border"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"it-card-title"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Titolo del contenuto<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"it-card-text"</span><span class="nt">&gt;</span>Breve descrizione.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="carousel">Carousel</h3>
+
+<p>Implementato negli esempi il nuovo componente card definito dalle classi <code class="language-plaintext highlighter-rouge">.it-card</code> e relativi modificatori. Il markup degli esempi e gli attributi per attivare il componente sono inoltre cambiati laddove c’è la necessità di gestire le altezze delle card con classi <code class="language-plaintext highlighter-rouge">.it-card-full-height</code> e/o la necessità di mostrarne le ombre <code class="language-plaintext highlighter-rouge">.shadow-</code>.</p>
+
+<p>Le classi legacy di Bootstrap <code class="language-plaintext highlighter-rouge">.card</code> sono ora deprecate ma <strong>saranno mantenute nei fogli di stile fino al prossimo rilascio maggiore, per permettere una migrazione graduale</strong>.</p>
+
+<h3 id="dimmer">Dimmer</h3>
+
+<p>Implementato negli esempi il nuovo componente card definito dalle classi <code class="language-plaintext highlighter-rouge">.it-card</code> e relativi modificatori.</p>
+
+<p>Le classi legacy di Bootstrap <code class="language-plaintext highlighter-rouge">.card</code> sono ora deprecate ma <strong>saranno mantenute nei fogli di stile fino al prossimo rilascio maggiore, per permettere una migrazione graduale</strong>.</p>
+
+<h3 id="hero">Hero</h3>
+
+<p>Implementato nell’esempio con immagine e margine negativo per contenuti sovrapposti il nuovo componente card definito dalle classi <code class="language-plaintext highlighter-rouge">.it-card</code> e relativi modificatori.</p>
+
+<p>Le classi legacy di Bootstrap <code class="language-plaintext highlighter-rouge">.card</code> sono ora deprecate ma <strong>saranno mantenute nei fogli di stile fino al prossimo rilascio maggiore, per permettere una migrazione graduale</strong>.</p>
+
+<h3 id="sections">Sections</h3>
+
+<p>Implementato nell’esempio con card il nuovo componente card definito dalle classi <code class="language-plaintext highlighter-rouge">.it-card</code> e relativi modificatori.</p>
+
+<p>Le classi legacy di Bootstrap <code class="language-plaintext highlighter-rouge">.card</code> sono ora deprecate ma <strong>saranno mantenute nei fogli di stile fino al prossimo rilascio maggiore, per permettere una migrazione graduale</strong>.</p>
+
+<h3 id="timeline">Timeline</h3>
+
+<p>Implementato nell’esempio il nuovo componente card definito dalle classi <code class="language-plaintext highlighter-rouge">.it-card</code> e relativi modificatori.</p>
+
+<p>Le classi legacy di Bootstrap <code class="language-plaintext highlighter-rouge">.card</code> sono ora deprecate ma <strong>saranno mantenute nei fogli di stile fino al prossimo rilascio maggiore, per permettere una migrazione graduale</strong>.</p>
+
+<h2 id="2150">2.15.0</h2>
+
+<p><a href="https://github.com/italia/bootstrap-italia/releases/tag/v2.15.0">Changelog completo</a> <svg class="icon steppers-success" aria-hidden="true"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-file"></use></svg></p>
+
+<h3 id="header">Header</h3>
+
+<p>La navbar presente negli esempi, quando aperta in versione mobile o a forte ingrandimento, è stata reimplementata come modale per migliorare l’accessibilità con le combinazioni principali di lettori di schermo, sistema operativo e browser. Modifiche principali:</p>
+<ul>
+  <li>struttura: la navbar ora utilizza un pattern dialog con backdrop</li>
+  <li>gerarchia visiva: la gestione <code class="language-plaintext highlighter-rouge">z-index</code> è allineata al componente modale</li>
+  <li>gestione del focus: implementato <code class="language-plaintext highlighter-rouge">focus-trap.js</code> per utenti da tastiera e lettori di schermo, e gestione inert</li>
+  <li>il comportamento è diverso se implementata dentro o fuori dall’elemento <code class="language-plaintext highlighter-rouge">main</code> di pagina (se presente)</li>
+</ul>
+
+<p>Se hai personalizzato il CSS della navbar, rivedi le tue modifiche per verificarne la compatibilità. Se hai modificato il comportamento JavaScript, assicurati che funzioni con il nuovo pattern dialog. Testa la tua implementazione con lettori di schermo e con utenti per verificarne l’accessibilità.</p>
+
+<h3 id="megamenu">Megamenu</h3>
+
+<p>La navbar presente negli esempi, quando aperta in versione mobile o a forte ingrandimento, è stata reimplementata come modale per migliorare l’accessibilità con le combinazioni principali di lettori di schermo, sistema operativo e browser. Modifiche principali:</p>
+<ul>
+  <li>struttura: la navbar ora utilizza un pattern dialog con backdrop</li>
+  <li>gerarchia visiva: la gestione <code class="language-plaintext highlighter-rouge">z-index</code> è allineata al componente modale</li>
+  <li>gestione del focus: implementato <code class="language-plaintext highlighter-rouge">focus-trap.js</code> per utenti da tastiera e lettori di schermo, e gestione inert</li>
+  <li>il comportamento è diverso se implementata dentro o fuori dall’elemento <code class="language-plaintext highlighter-rouge">main</code> di pagina (se presente)</li>
+</ul>
+
+<p>Se hai personalizzato il CSS della navbar, rivedi le tue modifiche per verificarne la compatibilità. Se hai modificato il comportamento JavaScript in, assicurati che funzioni con il nuovo pattern dialog. Testa la tua implementazione con lettori di schermo e con utenti per verificarne l’accessibilità.</p>
+
+<h3 id="navscroll">Navscroll</h3>
+
+<ul>
+  <li>Spostato il pulsante “Indietro” come primo elemento della struttura interna di <code class="language-plaintext highlighter-rouge">.menu-wrapper</code>.</li>
+</ul>
+
+<p>Inoltre, la versione mobile o a forte ingrandimento del componente, che si basa sulla navbar presente anche nei componenti Header e Megamenu, è stata reimplementata come modale per migliorare l’accessibilità con le combinazioni principali di lettori di schermo, sistema operativo e browser. Modifiche principali:</p>
+<ul>
+  <li>struttura: la navbar ora utilizza un pattern dialog con backdrop</li>
+  <li>gerarchia visiva: la gestione <code class="language-plaintext highlighter-rouge">z-index</code> è allineata al componente modale</li>
+  <li>gestione del focus: implementato <code class="language-plaintext highlighter-rouge">focus-trap.js</code> per utenti da tastiera e lettori di schermo, e gestione inert</li>
+  <li>il comportamento è diverso se implementata dentro o fuori dall’elemento <code class="language-plaintext highlighter-rouge">main</code> di pagina (se presente)</li>
+</ul>
+
+<p>Se hai personalizzato il CSS della navbar, rivedi le tue modifiche per verificarne la compatibilità. Se hai modificato il comportamento JavaScript in, assicurati che funzioni con il nuovo pattern dialog. Testa la tua implementazione con lettori di schermo e con utenti per verificarne l’accessibilità.</p>
+
+<h3 id="sticky">Sticky</h3>
+
+<p>La navbar presente nel markup dell’esempio “Attivabile con target”, quando aperta in versione mobile o a forte ingrandimento, è stata reimplementata come modale per migliorare l’accessibilità con le combinazioni principali di lettori di schermo, sistema operativo e browser. Modifiche principali:</p>
+<ul>
+  <li>struttura: la navbar ora utilizza un pattern dialog con backdrop</li>
+  <li>gerarchia visiva: la gestione <code class="language-plaintext highlighter-rouge">z-index</code> è allineata al componente modale</li>
+  <li>gestione del focus: implementato <code class="language-plaintext highlighter-rouge">focus-trap.js</code> per utenti da tastiera e lettori di schermo, e gestione inert</li>
+  <li>il comportamento è diverso se implementata dentro o fuori dall’elemento <code class="language-plaintext highlighter-rouge">main</code> di pagina (se presente)</li>
+</ul>
+
+<p>Se hai personalizzato il CSS della navbar, rivedi le tue modifiche per verificarne la compatibilità. Se hai modificato il comportamento JavaScript, assicurati che funzioni con il nuovo pattern dialog. Testa la tua implementazione con lettori di schermo e con utenti per verificarne l’accessibilità.</p>
+
+<h2 id="2140">2.14.0</h2>
+
+<p><a href="https://github.com/italia/bootstrap-italia/releases/tag/v2.14.0">Changelog completo</a> <svg class="icon steppers-success" aria-hidden="true"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-file"></use></svg></p>
+
+<h3 id="autocompletamento">Autocompletamento</h3>
+
+<p>Nuova modalità di utilizzo del componente Autocomplete via codice.</p>
+
+<h3 id="carousel-1">Carousel</h3>
+
+<p>Lato JavaScript il componente Carousel deve essere importato tramite la classe 
+<code class="language-plaintext highlighter-rouge">Carousel</code> e non più <code class="language-plaintext highlighter-rouge">CarouselBI</code>.</p>
+
+<h3 id="generale">Generale</h3>
+
+<p>Il <code class="language-plaintext highlighter-rouge">focus</code> con la tastiera viene adesso settato con l’attributo <code class="language-plaintext highlighter-rouge">data-focus-mouse</code>
+invece che con la classe <code class="language-plaintext highlighter-rouge">focus--mouse</code>. Da tenere presente nel caso di un 
+precedente utilizzo della classe <code class="language-plaintext highlighter-rouge">focus--mouse</code> per un controllo e/o un’ implementazione 
+ulteriore di accessibilità.</p>
+
+<h2 id="2130">2.13.0</h2>
+
+<p><a href="https://github.com/italia/bootstrap-italia/releases/tag/v2.13.0">Changelog completo</a> <svg class="icon steppers-success" aria-hidden="true"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-file"></use></svg></p>
+
+<h3 id="input-numerico">Input numerico</h3>
+
+<p>Le <code class="language-plaintext highlighter-rouge">label</code> degli input <code class="language-plaintext highlighter-rouge">percentuale</code> e <code class="language-plaintext highlighter-rouge">valuta</code> richiedono la classe <code class="language-plaintext highlighter-rouge">input-symbol-label</code>. 
+Le precedenti classi <code class="language-plaintext highlighter-rouge">input-number-percentage</code> e <code class="language-plaintext highlighter-rouge">input-number-currency</code> sono state rimosse.</p>
+
+<h3 id="steppers">Steppers</h3>
+
+<p>Gli elementi di tipo <code class="language-plaintext highlighter-rouge">&lt;svg&gt;</code> non interattivi necessitano dell’aggiunta di <code class="language-plaintext highlighter-rouge">aria-hidden="true"</code>.</p>
+
+<h3 id="tab">Tab</h3>
+
+<p>Sono stati rimossi gli elementi delle liste con classe <code class="language-plaintext highlighter-rouge">nav-item-filler</code> per 
+tutte le tab di tipo <code class="language-plaintext highlighter-rouge">Card</code>.</p>
+
+<h2 id="2120">2.12.0</h2>
+
+<p><a href="https://github.com/italia/bootstrap-italia/releases/tag/v2.12.0">Changelog completo</a> <svg class="icon steppers-success" aria-hidden="true"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-file"></use></svg></p>
+
+<h3 id="rating">Rating</h3>
+
+<ul>
+  <li>Aggiunto attributo <code class="language-plaintext highlighter-rouge">aria-hidden="true"</code> sulle icone perché lo scopo è già trasmesso agli strumenti assistivi dal testo con classe <code class="language-plaintext highlighter-rouge">.visually-hidden</code>.</li>
+</ul>
+
+<h3 id="torna-su">Torna su</h3>
+
+<ul>
+  <li>Rimossi gli attributi <code class="language-plaintext highlighter-rouge">tabindex="-1"</code> e <code class="language-plaintext highlighter-rouge">aria-hidden="true"</code> per permettere il focus da tastiera e l’interazione da strumenti assistivi.</li>
+  <li>Aggiunto attributo <code class="language-plaintext highlighter-rouge">aria-label="Torna su"</code> per comunicare lo scopo a strumenti assistivi.</li>
+</ul>
+
+<h2 id="2110">2.11.0</h2>
+
+<p><a href="https://github.com/italia/bootstrap-italia/releases/tag/v2.11.0">Changelog completo</a> <svg class="icon steppers-success" aria-hidden="true"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-file"></use></svg></p>
+
+<h3 id="input">Input</h3>
+
+<p>Quando si utilizza un campo input diverso da <code class="language-plaintext highlighter-rouge">submit</code>, <code class="language-plaintext highlighter-rouge">file</code>, <code class="language-plaintext highlighter-rouge">radio</code> e <code class="language-plaintext highlighter-rouge">checkbox</code> è necessario sempre applicare la classe <code class="language-plaintext highlighter-rouge">form-control</code>.</p>
+
+<h3 id="liste">Liste</h3>
+
+<p>Il codice markup è stato rivisto in chiave accessibilità e robustezza. In particolare cosa cambia:</p>
+<ul>
+  <li>L’elemento <code class="language-plaintext highlighter-rouge">.text</code> è ora implementato come heading <code class="language-plaintext highlighter-rouge">h</code> e non semplice <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code>. Dovrà avere il livello intestazione corretto a seconda della gerarchia in pagina.</li>
+</ul>
+
+<h3 id="liste-di-immagini">Liste di immagini</h3>
+
+<p>Utilizzare i tag <code class="language-plaintext highlighter-rouge">&lt;figure&gt;</code> e <code class="language-plaintext highlighter-rouge">&lt;figcaption&gt;</code> per liste di immagini con didascalia.</p>
+
+<h3 id="timeline-1">Timeline</h3>
+
+<p>Il codice markup è stato rivisto in chiave accessibilità e robustezza. In particolare cosa cambia:</p>
+<ul>
+  <li>L’elemento <code class="language-plaintext highlighter-rouge">.pin-wrapper</code> è ora implementato come heading <code class="language-plaintext highlighter-rouge">h</code> e non semplice <code class="language-plaintext highlighter-rouge">div</code>. Dovrà avere il livello intestazione corretto a seconda della gerarchia in pagina.</li>
+  <li>L’elemento <code class="language-plaintext highlighter-rouge">.pin-icon</code>, se semanticamente rilevante, deve avere attributo <code class="language-plaintext highlighter-rouge">role="img"</code> e contenere un tag <code class="language-plaintext highlighter-rouge">title</code> che lo descriva.</li>
+  <li>Gli elementi categoria e data hanno ora tag <code class="language-plaintext highlighter-rouge">span</code> <code class="language-plaintext highlighter-rouge">visually-hidden</code> che ne descrivono lo scopo.</li>
+  <li>L’elemento <code class="language-plaintext highlighter-rouge">.card-title</code> è ora implementato con heading <code class="language-plaintext highlighter-rouge">h4</code> per rispettare la gerarchia attuale. Dovrà avere il livello intestazione corretto a seconda della gerarchia in pagina.</li>
+</ul>
+
+<h2 id="2100">2.10.0</h2>
+
+<p><a href="https://github.com/italia/bootstrap-italia/releases/tag/v2.10.0">Changelog completo</a> <svg class="icon steppers-success" aria-hidden="true"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-file"></use></svg></p>
+
+<h3 id="checkbox">Checkbox</h3>
+
+<ul>
+  <li>Il “raggruppamento” di campi di input deve prevedere l’elemento nativo <code class="language-plaintext highlighter-rouge">&lt;fieldset&gt;</code>.</li>
+  <li>Sostituire <code class="language-plaintext highlighter-rouge">aria-labelledby</code> con <code class="language-plaintext highlighter-rouge">aria-describedby</code>.</li>
+</ul>
+
+<h3 id="input-1">Input</h3>
+
+<p>Il campo di input di tipo Password è stato rivisto in chiave accessibilità e robustezza. In particolare cosa cambia:</p>
+<ul>
+  <li>L’elemento <code class="language-plaintext highlighter-rouge">input.input-password</code> ha ora il corretto attributo <code class="language-plaintext highlighter-rouge">aria-describedby</code> al posto di <code class="language-plaintext highlighter-rouge">aria-labelledby</code>.</li>
+  <li>L’elemento <code class="language-plaintext highlighter-rouge">.password-icon</code> diventa un <code class="language-plaintext highlighter-rouge">button</code> con <code class="language-plaintext highlighter-rouge">role=switch</code> e uso dell’attributo <code class="language-plaintext highlighter-rouge">aria-checked</code> per lo stato.</li>
+  <li>Rivisto l’ordine degli elementi nell’HTML per rispecchiare la struttura corretta degli elementi.</li>
+  <li>Alcuni elementi <code class="language-plaintext highlighter-rouge">small</code> o <code class="language-plaintext highlighter-rouge">span</code> diventano <code class="language-plaintext highlighter-rouge">p</code>, ad esempio per la personalizzazione con attributi <code class="language-plaintext highlighter-rouge">data</code> delle varianti più avanzate ci si rivolgerà verso l’elemento <code class="language-plaintext highlighter-rouge">p.strength-meter-info</code> e non più al generico <code class="language-plaintext highlighter-rouge">small.form-text</code>.</li>
+  <li>Rimosso il controllo per il Caps-lock inserito, per non interferire con i tasti modificatori delle tecnologie assistive.</li>
+  <li>Aggiunta una variante con misuratore di sicurezza e suggerimenti.</li>
+</ul>
+
+<h3 id="liste-1">Liste</h3>
+
+<p>Il codice markup è stato rivisto in chiave accessibilità e robustezza. In particolare cosa cambia:</p>
+<ul>
+  <li>L’elemento <code class="language-plaintext highlighter-rouge">.link-list-heading</code> è ora implementato come heading <code class="language-plaintext highlighter-rouge">h</code> e non semplice <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code>. Dovrà avere il livello intestazione corretto a seconda della gerarchia in pagina.</li>
+  <li>L’elemento <code class="language-plaintext highlighter-rouge">.list-item-title</code> è ora implementato come heading <code class="language-plaintext highlighter-rouge">h</code> e non semplice <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code>. Dovrà avere il livello intestazione corretto a seconda della gerarchia in pagina.</li>
+</ul>
+
+<h3 id="radio-button">Radio button</h3>
+
+<ul>
+  <li>Il “raggruppamento” di campi di input deve prevedere l’elemento nativo <code class="language-plaintext highlighter-rouge">&lt;fieldset&gt;</code>.</li>
+  <li>Sostituire <code class="language-plaintext highlighter-rouge">aria-labelledby</code> con <code class="language-plaintext highlighter-rouge">aria-describedby</code>.</li>
+</ul>
+
+<h3 id="toggles">Toggles</h3>
+
+<ul>
+  <li>Il “raggruppamento” di campi di input deve prevedere l’elemento nativo <code class="language-plaintext highlighter-rouge">&lt;fieldset&gt;</code>.</li>
+  <li>Sostituire <code class="language-plaintext highlighter-rouge">aria-labelledby</code> con <code class="language-plaintext highlighter-rouge">aria-describedby</code>.</li>
+</ul>
+
+<h2 id="280">2.8.0</h2>
+
+<p><a href="https://github.com/italia/bootstrap-italia/releases/tag/v2.8.0">Changelog completo</a> <svg class="icon steppers-success" aria-hidden="true"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-file"></use></svg></p>
+
+<h3 id="avatar">Avatar</h3>
+
+<p>Il toggle del dropdown diventa <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> invece di <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code>.</p>
+
+<h3 id="header-1">Header</h3>
+
+<ul>
+  <li>Il toggle del dropdown diventa <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> invece di <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code>.</li>
+  <li>Gli altri elementi <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> che si comportano come toggle dropdown (eg. scelta Lingua), hanno l’aggiunta dell’attributo <code class="language-plaintext highlighter-rouge">role="button"</code>.</li>
+  <li>Il markup del Megamenu cambia come nel nuovo componente, per approfondire andare alla <a href="/bootstrap-switzerland/docs/menu-di-navigazione/megamenu/">relativa pagina</a>.</li>
+</ul>
+
+<h3 id="input-2">Input</h3>
+
+<p>Rimosso l’elemento con classe <code class="language-plaintext highlighter-rouge">.input-group-prepend</code> in favore dell’elemento 
+con classe <code class="language-plaintext highlighter-rouge">.input-group-text</code>.</p>
+
+<h3 id="liste-2">Liste</h3>
+
+<p>Gli elementi di tipo <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> dei collapse necessitano l’aggiunta dell’attributo <code class="language-plaintext highlighter-rouge">role="button"</code>.</p>
+
+<h3 id="megamenu-1">Megamenu</h3>
+
+<ul>
+  <li>tutti gli esempi del componente, anche quelli integrati nel componente <a href="/bootstrap-switzerland/docs/menu-di-navigazione/header/">header</a>, sono stati rivisti: refactoring markup <code class="language-plaintext highlighter-rouge">HTML</code>, classi e stili nei file <code class="language-plaintext highlighter-rouge">_megamenu.scss</code>, <code class="language-plaintext highlighter-rouge">_navigation.scss</code>, <code class="language-plaintext highlighter-rouge">_headernavbar.scss</code>, <code class="language-plaintext highlighter-rouge">_headernavbartheme.scss</code>, <code class="language-plaintext highlighter-rouge">_navigationtheme.scss</code></li>
+  <li>rimossi esempi “con sezioni”</li>
+  <li>rimosse classi <code class="language-plaintext highlighter-rouge">.it-megamenu-footer</code>, <code class="language-plaintext highlighter-rouge">.it-external</code>, <code class="language-plaintext highlighter-rouge">.it-more</code>, <code class="language-plaintext highlighter-rouge">.divider</code>, <code class="language-plaintext highlighter-rouge">h3</code>, <code class="language-plaintext highlighter-rouge">.link-list-heading</code></li>
+  <li>rimosse variabili obsolete e inutilizzate da <code class="language-plaintext highlighter-rouge">_variables.scss</code></li>
+</ul>
+
+<h3 id="navscroll-1">Navscroll</h3>
+
+<p>Gli elementi con classe <code class="language-plaintext highlighter-rouge">.it-back-button</code> diventano di tipo <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> invece di <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code>.
+Gli elementi di tipo <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> dei collapse necessitano l’aggiunta dell’attributo <code class="language-plaintext highlighter-rouge">role="button"</code>.</p>
+
+<h3 id="paginazione">Paginazione</h3>
+
+<p>Il toggle del dropdown diventa <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> invece di <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code>.</p>
+
+<h3 id="sidebar">Sidebar</h3>
+
+<p>Gli elementi di tipo <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> dei collapse necessitano l’aggiunta dell’attributo <code class="language-plaintext highlighter-rouge">role="button"</code>.</p>
+
+<h3 id="transfer">Transfer</h3>
+
+<p>Agli elementi di <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> occorre aggiungere l’attributo <code class="language-plaintext highlighter-rouge">role="button"</code>.</p>
+
+<h2 id="240">2.4.0</h2>
+
+<p><a href="https://github.com/italia/bootstrap-italia/releases/tag/v2.4.0">Changelog completo</a> <svg class="icon steppers-success" aria-hidden="true"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-file"></use></svg></p>
+
+<h3 id="callout">Callout</h3>
+
+<p>Il contenitore <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> con classe <code class="language-plaintext highlighter-rouge">.callout</code> deve essere seguito da un ulteriore contenitore <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> con classe <code class="language-plaintext highlighter-rouge">.callout-inner</code>. Seguire gli esempi e la successiva descrizione per capire la composizione del nuovo componente.</p>
+
+<h2 id="230">2.3.0</h2>
+
+<p><a href="https://github.com/italia/bootstrap-italia/releases/tag/v2.3.0">Changelog completo</a> <svg class="icon steppers-success" aria-hidden="true"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-file"></use></svg></p>
+
+<h3 id="steppers-1">Steppers</h3>
+
+<p>L’elemento con classe <code class="language-plaintext highlighter-rouge">.steppers-index</code> adesso è diventato uno <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code> collocato fuori dalla lista <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code>.</p>
+
+<h2 id="220">2.2.0</h2>
+
+<p><a href="https://github.com/italia/bootstrap-italia/releases/tag/v2.2.0">Changelog completo</a> <svg class="icon steppers-success" aria-hidden="true"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-file"></use></svg></p>
+
+<h3 id="input-3">Input</h3>
+
+<p>Quando si utilizza l’attributo <code class="language-plaintext highlighter-rouge">placeholder</code> o l’input parte già valorizzato assicurarsi di aggiungere alla label la classe <strong><code class="language-plaintext highlighter-rouge">active</code></strong> per impedire la sovrapposizione della label al campo.</p>
+
+<h3 id="generale-1">Generale</h3>
+
+<p>Per caricare i font utilizzando JavaScript occorre chiamare <strong>esplicitamente</strong> la funzione <code class="language-plaintext highlighter-rouge">loadFonts</code> passando il percorso della cartella dove si trovano i font.</p>
+
+
+        </main>
+      </div>
+    </div>
+
+    
+<script src="/bootstrap-switzerland/dist/js/bootstrap-switzerland.bundle.min.js?202507071531"></script>
+<script>
+  bootstrap.loadFonts('/bootstrap-switzerland/dist/fonts')
+</script><script src="/bootstrap-switzerland/docs/assets/dist/js/docs.min.js?202507071531"></script>
+<script src="/bootstrap-switzerland/docs/assets/src/js/vendor/anchor.min.js"></script>
+<script src="/bootstrap-switzerland/docs/assets/src/js/vendor/clipboard.min.js"></script>
+<script src="/bootstrap-switzerland/docs/assets/src/js/vendor/tsparticles.min.js"></script>
+
+<script src="/bootstrap-switzerland/docs/assets/src/js/docs.js?202507071531"></script>
+
+<script src="/bootstrap-switzerland/docs/assets/src/js/vendor/tweenjs.min.js"></script>
+<script src="/bootstrap-switzerland/docs/assets/src/js/vendor/easeljs.min.js"></script>
+<script src="/bootstrap-switzerland/docs/assets/src/js/vendor/preloadjs.min.js"></script>
+
+<script>
+  var manifest = [
+    { src: '/bootstrap-switzerland/docs/assets/img/cover/cover-animation-1.png', id: 'cover-1' },
+    { src: '/bootstrap-switzerland/docs/assets/img/cover/cover-animation-2.png', id: 'cover-2' },
+    { src: '/bootstrap-switzerland/docs/assets/img/cover/cover-animation-3.png', id: 'cover-3' },
+    { src: '/bootstrap-switzerland/docs/assets/img/cover/cover-animation-4.png', id: 'cover-4' },
+    { src: '/bootstrap-switzerland/docs/assets/img/cover/cover-animation-5.png', id: 'cover-5' },
+    { src: '/bootstrap-switzerland/docs/assets/img/cover/cover-animation-6.png', id: 'cover-6' },
+    { src: '/bootstrap-switzerland/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
+  ]
+</script>
+<script src="/bootstrap-switzerland/docs/assets/src/js/cover-animation.js?202507071531"></script>
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+
+<script>
+  docsearch({
+    appId: "V0EOJ2MHD5",
+    apiKey: "7f7c26d560b352162a23c9d1476e195d",
+    indexName: "italiaio",
+    container: "#search-input",
+    placeholder: "Cerca nella documentazione",
+    debug: false,
+    translations: {
+      button: {
+        buttonText: 'Cerca componenti, classi, informazioni...',
+        buttonAriaLabel: 'Cerca nella documentazione componenti, classi, informazioni',
+      },
+      modal: {
+        searchBox: {
+          resetButtonTitle: 'Cancella la query',
+          resetButtonAriaLabel: 'Cancella la query',
+          cancelButtonText: 'Annulla',
+          cancelButtonAriaLabel: 'Annulla',
+          searchInputLabel: 'Cerca',
+        },
+        startScreen: {
+          recentSearchesTitle: 'Recenti',
+          noRecentSearchesText: 'Nessuna ricerca recente',
+          saveRecentSearchButtonTitle: 'Salva questa ricerca',
+          removeRecentSearchButtonTitle: 'Rimuovi questa ricerca dalla cronologia',
+          favoriteSearchesTitle: 'Preferiti',
+          removeFavoriteSearchButtonTitle: 'Rimuovi questa ricerca dai preferiti',
+        },
+        errorScreen: {
+          titleText: 'Impossibile recuperare i risultati',
+          helpText: 'Controlla la tua connessione di rete.',
+        },
+        footer: {
+          selectText: 'per selezionare',
+          selectKeyAriaLabel: 'Tasto Invio',
+          navigateText: 'per navigare',
+          navigateUpKeyAriaLabel: 'Freccia su',
+          navigateDownKeyAriaLabel: 'Freccia giù',
+          closeText: 'per chiudere',
+          closeKeyAriaLabel: 'Tasto Esc',
+          searchByText: 'Powered by',
+        },
+        noResultsScreen: {
+          noResultsText: 'Nessun risultato per',
+          suggestedQueryText: 'Prova a cercare',
+          reportMissingResultsText: 'Pensi che questa query dovrebbe restituire risultati?',
+          reportMissingResultsLinkText: 'Faccelo sapere.',
+        },
+      }
+
+    }
+  })
+</script><script>
+  /**
+   * Aggiungo il bottone copia negli elementi di esempio codice
+   */
+  document
+    .querySelectorAll('figure.highlight, pre.highlight')
+    .forEach(function (node) {
+      const button = document.createElement('button'),
+        divContainer = document.createElement('div');
+      divContainer.classList.add('copy-button-container');
+      button.type = 'button';
+      button.ariaLabel = 'Copia il codice negli appunti';
+      button.innerText = 'Copia';
+      button.classList.add('btn', 'btn-primary', 'btn-xs');
+      button.setAttribute('type', 'button');
+      button.addEventListener('click', function () {
+        const code = node.querySelector('code td[class="code"] pre') ?? node.querySelector('code td[class="rouge-code"] pre');
+        navigator.clipboard.writeText(code.innerText.trim());
+        button.innerText = 'Copiato';
+        button.classList.remove('btn-primary');
+        button.classList.add('btn-success');
+        setTimeout(() => {
+          button.classList.remove('btn-success');
+          button.classList.add('btn-primary');
+          button.innerText = 'Copia';
+        }, 5000);
+      });
+      divContainer.appendChild(button);
+      /**
+       * Snippet
+       * <div class="bd-example">
+       * </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>       * 
+</pre></td></tr></tbody></table></code></pre></figure>
+
+       */
+      if (node.nodeName == 'FIGURE') {
+        node.insertBefore(divContainer, node.querySelector('pre'));
+      }
+      /*
+      * Snippet
+      * ```html
+      * ```
+      */
+      else if (node.nodeName == 'PRE') {
+        node.classList.remove("highlight");
+        node.insertAdjacentElement('beforebegin', divContainer);
+      }
+    });
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{
+    "amichevole con lettori di schermo": "PRONTO",
+    "angular Kit": "PRONTO",
+    "angular Kit - url": "https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/breadcrumb",
+    "assignees": [
+        "Fupete"
+    ],
+    "bootstrap Italia": "PRONTO",
+    "bootstrap Italia - url": "https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/breadcrumbs/",
+    "comprensibile": "PRONTO",
+    "content": {
+        "body": "https://designers.italia.it/design-system/componenti/breadcrumbs/",
+        "id": "DI_lADOAOqloM4AcXblzgFT9Wg",
+        "title": "Breadcrumbs",
+        "type": "DraftIssue"
+    },
+    "id": "PVTI_lADOAOqloM4AcXblzgMjwVc",
+    "navigabile": "PRONTO",
+    "react Kit": "PRONTO",
+    "react Kit - url": "https://italia.github.io/design-react-kit/?path=/docs/documentazione-menu-di-navigazione-breadcrumbs--documentazione",
+    "status": "Todo",
+    "status a11y check": "Done",
+    "title": "Breadcrumbs",
+    "uI Kit Italia": "PRONTO",
+    "uI Kit Italia - url": "https://www.figma.com/community/file/1105848677422572920",
+    "visivamente accessibile": "PRONTO"
+}

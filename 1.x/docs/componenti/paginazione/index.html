@@ -6,33 +6,32 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="Documentazione ed esempi del componente di paginazione utile per indicare una serie di contenuti correlati tra più pagine." />
-<meta name="author" content="Dipartimento per la trasformazione digitale" />
+<meta name="author" content="" />
 <meta name="generator" content="Jekyll v4.2.1" />
 
-<title>Paginazione · Bootstrap Italia</title>
-
-
+<title>Paginazione · Bootstrap Switzerland</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-italia/1.x/dist/css/bootstrap-italia.min.css?202506241154" rel="stylesheet" />
+<link href="/bootstrap-switzerland/dist/css/bootstrap-switzerland.min.css?202507071536" rel="stylesheet" />
+
 <!-- Documentation extras -->
  
-<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.2/dist/cdn/docsearch.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" rel="stylesheet" />
 
-<link href="/bootstrap-italia/1.x/docs/assets/dist/css/docs.min.css?202506241154" rel="stylesheet" />
+<link href="/bootstrap-switzerland/docs/assets/dist/css/docs.min.css?202507071536" rel="stylesheet" />
 
 <!-- Favicons -->
-<link rel="icon" href="/bootstrap-italia/1.x/favicon.ico" />
-<link rel="icon" href="/bootstrap-italia/1.x/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
-<link rel="icon" href="/bootstrap-italia/1.x/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
-<link rel="mask-icon" href="/bootstrap-italia/1.x/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
-<link rel="apple-touch-icon" href="/bootstrap-italia/1.x/docs/assets/img/favicons/apple-touch-icon.png" />
-<link rel="manifest" href="/bootstrap-italia/1.x/site.webmanifest" />
-<meta name="msapplication-config" content="/bootstrap-italia/1.x/browserconfig.xml" />
-<meta name="theme-color" content="#0066CC" />
+<link rel="icon" href="/bootstrap-switzerland/favicon.ico" />
+<link rel="icon" href="/bootstrap-switzerland/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bootstrap-switzerland/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="apple-touch-icon" href="/bootstrap-switzerland/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bootstrap-switzerland/site.webmanifest" />
+<meta name="msapplication-config" content="/bootstrap-switzerland/browserconfig.xml" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="theme-color" content="#ffffff" />
  <!-- Twitter -->
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@designersITA" />
-<meta name="twitter:creator" content="Dipartimento per la trasformazione digitale" />
+<meta name="twitter:site" content="" />
+<meta name="twitter:creator" content="" />
 <meta name="twitter:title" content="Paginazione" />
 <meta name="twitter:description" content="Documentazione ed esempi del componente di paginazione utile per indicare una serie di contenuti correlati tra più pagine." />
 <meta name="twitter:image" content="/docs/assets/img/favicons/social-card.png" />
@@ -46,41 +45,29 @@
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
- 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script>
-  // Disabilita tracciamento se il cookie cookies_consent non esiste
-  if (document.cookie.indexOf('cookies_consent=true') === -1) {
-    window['ga-disable-UA-114758441-1'] = true
-  }
-</script>
-<script>
-  ;(function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r
-    ;(i[r] =
-      i[r] ||
-      function () {
-        ;(i[r].q = i[r].q || []).push(arguments)
-      }),
-      (i[r].l = 1 * new Date())
-    ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
-    a.async = 1
-    a.src = g
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga')
 
-  ga('create', 'UA-114758441-1', 'auto')
-  ga('set', 'anonymizeIp', true)
-  ga('send', 'pageview')
-</script>
-<!-- End Google Analytics -->
+
+
+<!--<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>-->
 
 
   </head>
   <body>
-    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+    <a id="skippy" class="visually-hidden-focusable" href="#content">
       <div class="container">
-        <span class="skiplink-text">Skip to main content</span>
+        <span class="skiplink-text">Vai al contenuto principale</span>
       </div>
     </a>
 
@@ -88,30 +75,30 @@
   <button
     class="navbar-toggler"
     type="button"
-    data-toggle="collapse"
-    data-target="#navbarsTop"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarsTop"
     aria-controls="navbarsTop"
     aria-expanded="false"
     aria-label="Toggle navigation"
   >
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div>
+<!--  <div>
     <a class="navbar-brand text-decoration-none" href="https://innovazione.gov.it/"
       >Dipartimento <span class="d-none d-lg-inline">per la Trasformazione </span>Digitale</a
     >
     <span class="navbar-brand text-white"> + </span>
     <a class="navbar-brand text-decoration-none" href="http://agid.gov.it/">AgID</a>
-  </div>
+  </div>-->
   <div class="collapse navbar-collapse" id="navbarsTop">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item nav-item-w-divider">
+    <ul class="navbar-nav ms-auto">
+<!--      <li class="nav-item nav-item-w-divider">
         <a class="nav-link text-decoration-none" href="https://pianotriennale-ict.italia.it/">Piano Triennale</a>
-      </li>
+      </li>-->
       <li class="nav-item">
-        <a class="nav-link text-decoration-none" href="https://developers.italia.it/">Developers</a>
+        <a class="nav-link text-decoration-none" href="https://www.puzzzle.ch/">Developers</a>
       </li>
-      <li class="nav-item nav-item-w-divider">
+<!--      <li class="nav-item nav-item-w-divider">
         <a class="nav-link text-decoration-none" href="http://designers.italia.it/">Designers</a>
       </li>
       <li class="nav-item">
@@ -119,17 +106,19 @@
       </li>
       <li class="nav-item">
         <a class="nav-link text-decoration-none" href="https://docs.italia.it/">Docs</a>
-      </li>
+      </li>-->
       <li class="nav-item">
-        <a class="nav-link text-decoration-none" href="https://github.com/italia/">GitHub</a>
+        <a class="nav-link text-decoration-none" href="https://github.com/puzzle/">GitHub</a>
       </li>
     </ul>
   </div>
 </nav>
  <header class="navbar-main navbar navbar-dark bd-navbar px-3 bd-navbar--slim">
-  <div class="container-fluid">
-    <a class="navbar-brand py-2 text-decoration-none" href="/bootstrap-italia/1.x/" aria-label="Bootstrap Italia Homepage" title="Bootstrap Italia Homepage">
-      <div class="d-flex flex-row"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 74"
+  <div class="container">
+    <a class="navbar-brand py-2 text-decoration-none" href="/bootstrap-switzerland/" aria-label="Bootstrap Switzerland Homepage"
+      title="Bootstrap Switzerland Homepage">
+      <div class="d-flex flex-row">
+        <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 74"
   
    height="48"
   >
@@ -137,38 +126,57 @@
     <path d="M31.799 71.9V15.7h15.1V72h-15.1zM91.099 28.5h-13.8v23.1c0 2.3.1 3.8.2 4.8.1.9.5 1.7 1.2 2.4s1.8 1 3.3 1l8.6-.2.7 12c-5 1.1-8.9 1.7-11.5 1.7-6.8 0-11.4-1.5-13.8-4.6-2.5-3-3.7-8.6-3.7-16.8V0h15.1v15.6h13.8v12.9zM9.099 32.8c-2.6 0-4.8-.9-6.5-2.7s-2.6-4-2.6-6.6.9-4.8 2.5-6.6c1.7-1.8 3.9-2.6 6.5-2.6s4.8.9 6.5 2.7 2.5 4 2.5 6.7-.8 4.8-2.5 6.6c-1.6 1.6-3.7 2.5-6.4 2.5z"></path>
   </g>
 </svg>
-<div class="d-flex flex-column pl-3 pl-sm-4">
-          <h1 class="bd-logo-title">Bootstrap Italia</h1>
-          <h2 class="bd-logo-subtitle">Il tema Bootstrap 4 per <span class="d-none d-sm-inline">lo sviluppo di applicazioni web per </span>la PA</h2>
+-->
+        <div class="d-flex flex-column ps-3 ps-sm-4">
+          <h1 class="bd-logo-title">Bootstrap Switzerland</h1>
+          <h2 class="bd-logo-subtitle">A Bootstrap theme based on the design system of the Swiss Confederation.</h2>
         </div>
       </div>
     </a>
 
     
-    <button class="btn btn-xs btn-primary d-md-none px-2 text-uppercase" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+    <button class="btn btn-xs btn-primary d-md-none px-2 text-uppercase" type="button" data-bs-toggle="collapse"
+      data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false"
+      aria-label="Toggle docs navigation">
       menu
     </button>
     
 
-    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-      <li class="nav-item pr-2">
-        <a title="Scarica Bootstrap Italia" data-toggle="tooltip" class="nav-link d-flex align-items-center" href="https://github.com/italia/bootstrap-italia/releases/download/v1.6.4/bootstrap-italia.zip" aria-label="Download">
-          <small class="pr-2 m-0">v1.6.4</small>
-          <svg class="icon icon-sm icon-light"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-download" xlink:href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-download"></use></svg><span class="sr-only">Download</span>
+    <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
+<!--      <li class="nav-item pe-2">
+        <a title="Scarica Bootstrap Italia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
+          href="https://github.com/italia/bootstrap-italia/releases/download/v2.16.0/bootstrap-italia.zip"
+          aria-label="Download">
+          <small class="pe-2 m-0">v2.16.0</small>
+          <svg class="icon icon-sm icon-light">
+            <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-download"
+              xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-download"></use>
+          </svg><span class="visually-hidden">Download</span>
         </a>
-      </li>
-      <li class="nav-item pr-2">
-        <a title="Repository GitHub di Bootstrap Italia" data-toggle="tooltip" class="nav-link d-flex align-items-center" href="https://github.com/italia/bootstrap-italia/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <svg class="icon icon-sm icon-light"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-github" xlink:href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-github"></use></svg><span class="sr-only">GitHub</span>
+      </li>-->
+      <li class="nav-item pe-2">
+        <a title="Repository GitHub di Bootstrap Switzerland" data-toggle="tooltip"
+          class="nav-link d-flex align-items-center" href="https://github.com/puzzle/bootstrap-switzerland/" target="_blank" rel="noopener noreferrer"
+          aria-label="GitHub">
+          <svg class="icon icon-sm icon-light">
+            <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-github"
+              xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-github"></use>
+          </svg><span class="visually-hidden">GitHub</span>
         </a>
       </li>
     </ul>
 
     
-    <div class="bd-search w-100">
-      <label for="search-input" class="sr-only">Cerca:</label>
-      <input type="search" class="form-control" id="search-input" name="search-input" placeholder="Cerca componenti, classi, informazioni..." aria-label="Cerca..." autocomplete="off" />
+
+
+    <div onclick="document.querySelector('#search-input > button').click()" class="search-in-docs">
+      <a aria-current="page" href="#" class="search-link rounded-icon" aria-label="Cerca nel sito"
+         data-focus-mouse="false"><svg role="img" class="icon icon-sm icon-primary">
+          <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-search"></use>
+        </svg><span class="search-in-docs--label">Cerca nella documentazione</span></a>
     </div>
+
+    <div id="search-input"></div>
     
   </div>
 </header>
@@ -184,84 +192,99 @@
             
             <!-- One:usare ID -->
             <a
-              class="list-item large medium right-icon "
+              role="button"
+              class="list-item large medium icon-right "
               href="#collapse-1"
-              data-toggle="collapse"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-1"
               aria-expanded="false"
               aria-controls="collapse-1"
             >
-              <span>Come iniziare</span>
-              <svg class="icon icon-sm icon-primary right" aria-hidden="true">
-                <use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-expand" xlink:href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-expand"></use>
-              </svg>
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Come iniziare</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
             </a>
             <ul class="link-sublist collapse " id="collapse-1"><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/come-iniziare/introduzione/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/come-iniziare/introduzione/">
                   <span>Introduzione</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/come-iniziare/strumenti-di-compilazione/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/come-iniziare/strumenti-di-compilazione/">
                   <span>Strumenti di compilazione</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/come-iniziare/personalizzazione-della-libreria/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/come-iniziare/personalizzazione-della-libreria/">
                   <span>Personalizzazione della libreria</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/come-iniziare/modificare-componenti/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/come-iniziare/modificare-componenti/">
                   <span>Modificare Componenti</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/come-iniziare/componente-base/">
-                  <span>Componente base</span></a>
+                <a class="list-item " href="/bootstrap-switzerland/docs/come-iniziare/migrazione-dalla-versione-1/">
+                  <span>Migrazione dalla versione 1</span></a>
               </li></ul>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-switzerland/docs/breaking-change/"><span>Breaking change</span></a>
             
           </li><li>
             
             <!-- One:usare ID -->
             <a
-              class="list-item large medium right-icon "
-              href="#collapse-2"
-              data-toggle="collapse"
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-3"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-3"
               aria-expanded="false"
-              aria-controls="collapse-2"
+              aria-controls="collapse-3"
             >
-              <span>Organizzare gli spazi</span>
-              <svg class="icon icon-sm icon-primary right" aria-hidden="true">
-                <use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-expand" xlink:href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-expand"></use>
-              </svg>
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Organizzare gli spazi</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
             </a>
-            <ul class="link-sublist collapse " id="collapse-2"><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-gli-spazi/introduzione/">
+            <ul class="link-sublist collapse " id="collapse-3"><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/introduzione/">
                   <span>Introduzione</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-gli-spazi/allineamento-verticale/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/allineamento-verticale/">
                   <span>Allineamento verticale</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-gli-spazi/bordi/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/bordi/">
                   <span>Bordi</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-gli-spazi/clearfix/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/clearfix/">
                   <span>Clearfix</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-gli-spazi/dimensionamento/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/dimensionamento/">
                   <span>Dimensionamento</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-gli-spazi/display/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/display/">
                   <span>Display</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-gli-spazi/flex/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/flex/">
                   <span>Flex</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-gli-spazi/float/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/float/">
                   <span>Float</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-gli-spazi/griglie/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/griglie/">
                   <span>Griglie</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-gli-spazi/ombreggiature/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/ombreggiature/">
                   <span>Ombreggiature</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-gli-spazi/posizionamento/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/posizionamento/">
                   <span>Posizionamento</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-gli-spazi/spaziature/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/proporzioni/">
+                  <span>Proporzioni</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-gli-spazi/spaziature/">
                   <span>Spaziature</span></a>
               </li></ul>
             
@@ -269,49 +292,44 @@
             
             <!-- One:usare ID -->
             <a
-              class="list-item large medium right-icon "
-              href="#collapse-3"
-              data-toggle="collapse"
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-4"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-4"
               aria-expanded="false"
-              aria-controls="collapse-3"
+              aria-controls="collapse-4"
             >
-              <span>Organizzare i contenuti</span>
-              <svg class="icon icon-sm icon-primary right" aria-hidden="true">
-                <use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-expand" xlink:href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-expand"></use>
-              </svg>
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Organizzare i contenuti</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
             </a>
-            <ul class="link-sublist collapse " id="collapse-3"><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-i-contenuti/introduzione/">
+            <ul class="link-sublist collapse " id="collapse-4"><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-i-contenuti/introduzione/">
                   <span>Introduzione</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-i-contenuti/codice/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-i-contenuti/codice/">
                   <span>Codice</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-i-contenuti/embed/">
-                  <span>Embed</span></a>
-              </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-i-contenuti/immagini/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-i-contenuti/immagini/">
                   <span>Immagini</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-i-contenuti/liste/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-i-contenuti/liste/">
                   <span>Liste</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-i-contenuti/liste-di-immagini/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-i-contenuti/liste-di-immagini/">
                   <span>Liste di immagini</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-i-contenuti/liste-di-link/">
-                  <span>Liste di link</span></a>
-              </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-i-contenuti/oggetto-media/">
-                  <span>Oggetto Media</span></a>
-              </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-i-contenuti/tabelle/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-i-contenuti/tabelle/">
                   <span>Tabelle</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-i-contenuti/testo/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-i-contenuti/testo/">
                   <span>Testo</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/organizzare-i-contenuti/tipografia/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/organizzare-i-contenuti/tipografia/">
                   <span>Tipografia</span></a>
               </li></ul>
             
@@ -319,52 +337,62 @@
             
             <!-- One:usare ID -->
             <a
-              class="list-item large medium right-icon "
-              href="#collapse-4"
-              data-toggle="collapse"
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-5"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-5"
               aria-expanded="false"
-              aria-controls="collapse-4"
+              aria-controls="collapse-5"
             >
-              <span>Menu di navigazione</span>
-              <svg class="icon icon-sm icon-primary right" aria-hidden="true">
-                <use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-expand" xlink:href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-expand"></use>
-              </svg>
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Menu di navigazione</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
             </a>
-            <ul class="link-sublist collapse " id="collapse-4"><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/menu-di-navigazione/introduzione/">
+            <ul class="link-sublist collapse " id="collapse-5"><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/introduzione/">
                   <span>Introduzione</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/menu-di-navigazione/bottomnav/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/bottomnav/">
                   <span>BottomNav</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/menu-di-navigazione/breadcrumbs/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/breadcrumbs/">
                   <span>Breadcrumbs</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/menu-di-navigazione/header/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/forward/">
+                  <span>Forward</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/header/">
                   <span>Header</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/menu-di-navigazione/megamenu/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/megamenu/">
                   <span>Megamenu</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/menu-di-navigazione/navscroll/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/footer/">
+                  <span>Footer</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/navscroll/">
                   <span>Navscroll</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/menu-di-navigazione/sidebar/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/sidebar/">
                   <span>Sidebar</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/menu-di-navigazione/skiplinks/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/skiplinks/">
                   <span>Skiplinks</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/menu-di-navigazione/thumbnav/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/thumbnav/">
                   <span>Thumbnav</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/menu-di-navigazione/toolbar/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/toolbar/">
                   <span>Toolbar</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/menu-di-navigazione/torna-indietro/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/torna-indietro/">
                   <span>Torna indietro</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/menu-di-navigazione/torna-su/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/menu-di-navigazione/torna-su/">
                   <span>Torna su</span></a>
               </li></ul>
             
@@ -372,156 +400,167 @@
             
             <!-- One:usare ID -->
             <a
-              class="list-item large medium right-icon active"
-              href="#collapse-5"
-              data-toggle="collapse"
+              role="button"
+              class="list-item large medium icon-right active"
+              href="#collapse-6"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-6"
               aria-expanded="true"
-              aria-controls="collapse-5"
+              aria-controls="collapse-6"
             >
-              <span>Componenti</span>
-              <svg class="icon icon-sm icon-primary right" aria-hidden="true">
-                <use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-expand" xlink:href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-expand"></use>
-              </svg>
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Componenti</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
             </a>
-            <ul class="link-sublist collapse show" id="collapse-5"><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/introduzione/">
+            <ul class="link-sublist collapse show" id="collapse-6"><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/introduzione/">
                   <span>Introduzione</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/affix/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/accordion/">
+                  <span>Accordion</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/affix/">
                   <span>Affix</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/alert/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/alert/">
                   <span>Alert</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/avatar/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/avatar/">
                   <span>Avatar</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/badge/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/badge/">
                   <span>Badge</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/bottoni/">
-                  <span>Bottoni</span></a>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/buttons/">
+                  <span>Buttons</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/card/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/card/">
                   <span>Card</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/callout/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/callout/">
                   <span>Callout</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/carousel-legacy/">
-                  <span>Carousel Legacy</span></a>
-              </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/carousel/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/carousel/">
                   <span>Carousel</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/chips/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/chips/">
                   <span>Chips</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/collapse/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/collapse/">
                   <span>Collapse</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/cookiebar/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/cookiebar/">
                   <span>Cookiebar</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/dimmer/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/dimmer/">
                   <span>Dimmer</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/dropdown/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/dropdown/">
                   <span>Dropdown</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/forward/">
-                  <span>Forward</span></a>
-              </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/hero/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/hero/">
                   <span>Hero</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/modale/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/modale/">
                   <span>Modale</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/notifiche/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/notifiche/">
                   <span>Notifiche</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/overlay/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/overlay/">
                   <span>Overlay</span></a>
               </li><li>
-                <a class="list-item  active" href="/bootstrap-italia/1.x/docs/componenti/paginazione/">
+                <a class="list-item  active" href="/bootstrap-switzerland/docs/componenti/paginazione/">
                   <span>Paginazione</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/popover/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/popover/">
                   <span>Popover</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/progress-indicators/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/progress-indicators/">
                   <span>Progress Indicators</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/rating/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/rating/">
                   <span>Rating</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/sections/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/sections/">
                   <span>Sections</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/steppers/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/steppers/">
                   <span>Steppers</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/tab/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/sticky/">
+                  <span>Sticky</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/tab/">
                   <span>Tab</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/timeline/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/timeline/">
                   <span>Timeline</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/componenti/tooltip/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/tooltip/">
                   <span>Tooltip</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/componenti/video-player/">
+                  <span>Video Player</span></a>
               </li></ul>
             
           </li><li>
             
             <!-- One:usare ID -->
             <a
-              class="list-item large medium right-icon "
-              href="#collapse-6"
-              data-toggle="collapse"
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-7"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-7"
               aria-expanded="false"
-              aria-controls="collapse-6"
+              aria-controls="collapse-7"
             >
-              <span>Form</span>
-              <svg class="icon icon-sm icon-primary right" aria-hidden="true">
-                <use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-expand" xlink:href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-expand"></use>
-              </svg>
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Form</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
             </a>
-            <ul class="link-sublist collapse " id="collapse-6"><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/form/introduzione/">
+            <ul class="link-sublist collapse " id="collapse-7"><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/introduzione/">
                   <span>Introduzione</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/form/input/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/input/">
                   <span>Input</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/form/input-numerico/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/input-numerico/">
                   <span>Input Numerico</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/form/input-calendario/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/input-calendario/">
                   <span>Input Calendario</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/form/input-ora/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/input-ora/">
                   <span>Input Ora</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/form/autocompletamento/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/autocompletamento/">
                   <span>Autocompletamento</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/form/upload/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/upload/">
                   <span>Upload</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/form/radio-button/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/radio-button/">
                   <span>Radio Button</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/form/select/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/select/">
                   <span>Select</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/form/checkbox/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/checkbox/">
                   <span>Checkbox</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/form/toggles/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/toggles/">
                   <span>Toggles</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/form/transfer/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/form/transfer/">
                   <span>Transfer</span></a>
               </li></ul>
             
@@ -529,39 +568,43 @@
             
             <!-- One:usare ID -->
             <a
-              class="list-item large medium right-icon "
-              href="#collapse-7"
-              data-toggle="collapse"
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-8"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-8"
               aria-expanded="false"
-              aria-controls="collapse-7"
+              aria-controls="collapse-8"
             >
-              <span>Utilities</span>
-              <svg class="icon icon-sm icon-primary right" aria-hidden="true">
-                <use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-expand" xlink:href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-expand"></use>
-              </svg>
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Utilities</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
             </a>
-            <ul class="link-sublist collapse " id="collapse-7"><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/utilities/colori/">
+            <ul class="link-sublist collapse " id="collapse-8"><li>
+                <a class="list-item " href="/bootstrap-switzerland/docs/utilities/colori/">
                   <span>Colori</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/utilities/colori-custom/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/utilities/colori-custom/">
                   <span>Colori Custom</span></a>
               </li><li>
-                <a class="list-item " href="/bootstrap-italia/1.x/docs/utilities/icone/">
+                <a class="list-item " href="/bootstrap-switzerland/docs/utilities/icone/">
                   <span>Icone</span></a>
               </li></ul>
             
           </li><li>
             
-            <a class="list-item active" href="/bootstrap-italia/1.x/docs/esempi/"><span>Esempi</span></a>
+            <a class="list-item active" href="/bootstrap-switzerland/docs/esempi/"><span>Esempi</span></a>
             
           </li><li>
             
-            <a class="list-item active" href="/bootstrap-italia/1.x/docs/progetti/"><span>Progetti</span></a>
+            <a class="list-item active" href="/bootstrap-switzerland/docs/progetti/"><span>Progetti</span></a>
             
           </li><li>
             
-            <a class="list-item active" href="/bootstrap-italia/1.x/docs/informazioni/"><span>Informazioni</span></a>
+            <a class="list-item active" href="/bootstrap-switzerland/docs/informazioni/"><span>Informazioni</span></a>
             
           </li></ul>
       </div>
@@ -586,13 +629,14 @@
 <li class="toc-entry toc-h2"><a href="#funzioni-aggiuntive">Funzioni aggiuntive</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#more">More</a></li>
-<li class="toc-entry toc-h3"><a href="#page-changer">Page changer</a></li>
+<li class="toc-entry toc-h3"><a href="#changer">Changer</a></li>
 <li class="toc-entry toc-h3"><a href="#jump-to-page">Jump to page</a></li>
 <li class="toc-entry toc-h3"><a href="#simple-mode">Simple mode</a></li>
 <li class="toc-entry toc-h3"><a href="#link-testuali">Link testuali</a></li>
 <li class="toc-entry toc-h3"><a href="#total-number">Total number</a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h2"><a href="#breaking-change">Breaking change</a></li>
 </ul>
   </div>
 </div>
@@ -600,64 +644,87 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Paginazione</h1>
-          <p class="bd-lead">Documentazione ed esempi del componente di paginazione utile per indicare una serie di contenuti correlati tra più pagine.</p>
+          <p class="lead">Documentazione ed esempi del componente di paginazione utile per indicare una serie di contenuti correlati tra più pagine.</p>
           <h2 id="panoramica">Panoramica</h2>
 
 <p>I collegamenti della paginazione sono contenuti per praticità in un elemento <code class="language-plaintext highlighter-rouge">&lt;nav class="pagination-wrapper"&gt;</code> per dare la possibilità agli screenreader, e altre tecnologie assistive, di identificarli come una sezione di navigazione.</p>
 
+<div class="bd-callout bd-callout-accessibility">
+<h4 id="accessibilità">Accessibilità</h4>
+
 <p>Poiché è molto probabile che la pagina possa contenere più di un elemento <code class="language-plaintext highlighter-rouge">&lt;nav class="pagination-wrapper"&gt;</code> è consigliabile inserire un attributo <code class="language-plaintext highlighter-rouge">aria-label</code> con la descrizione del suo scopo. Ad esempio, se il componente di impaginazione viene utilizzato per navigare tra una serie di risultati di ricerca, un’etichetta appropriata potrebbe essere <code class="language-plaintext highlighter-rouge">aria-label="Pagine dei risultati di ricerca"</code>.</p>
+</div>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper" aria-label="Esempio di navigazione della pagina">
   <ul class="pagination">
-    <li class="page-item">
+    <li class="page-item disabled">
       <a class="page-link" href="#">
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"></use></svg>
-        <span class="sr-only">Pagina precedente</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+        <span class="visually-hidden">Pagina precedente</span>
       </a>
     </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" aria-current="page" href="#">1</a></li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item">
       <a class="page-link" href="#">
-        <span class="sr-only">Pagina successiva</span>
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"></use></svg>
+        <span class="visually-hidden">Pagina successiva</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"></use></svg>
       </a>
     </li>
   </ul>
 </nav>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione della pagina"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione della pagina"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item disabled"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">aria-current=</span><span class="s">"page"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h2 id="stato-disabilitato-e-attivo">Stato disabilitato e attivo</h2>
 
-<p>I link della paginazione assumonono uno stato disabilitato usando la classe <code class="language-plaintext highlighter-rouge">.disabled</code> nel tag <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>.
+<p>I link della paginazione assumono uno stato disabilitato usando la classe <code class="language-plaintext highlighter-rouge">.disabled</code> nel tag <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>.
 Per indicare la pagina attiva corrente utilizzare l’attributo <code class="language-plaintext highlighter-rouge">aria-current="page"</code> nel tag <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code>, l’aspetto grafico cambierà di conseguenza.</p>
 
 <div class="bd-callout bd-callout-warning">
-<h5 id="disabilitazione-link">Disabilitazione link</h5>
+<h4 id="disabilitazione-link">Disabilitazione link</h4>
 
-<p>La classe <code class="language-plaintext highlighter-rouge">.disabled</code> usa <code class="language-plaintext highlighter-rouge">pointer-events: none</code> per provare a disabilitare l’attivazione dei comportamenti di default dei link <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code>, ma tale funzionalità non è gestita in alcuni browsers. Oltre a questo, la navigazione attraverso tastiera rimane abilitata, per cui utenti che utilizzano tecnologie assistive saranno comunque in grado di attivare tali link. Per ovviare a questo problema, è possibile aggiungere l’attributo <code class="language-plaintext highlighter-rouge">tabindex="-1"</code>, e utilizzare Javascript per disabilitare le loro funzionalità.</p>
+<p>La classe <code class="language-plaintext highlighter-rouge">.disabled</code> usa <code class="language-plaintext highlighter-rouge">pointer-events: none</code> per provare a disabilitare l’attivazione dei comportamenti di default dei link <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code>, ma tale funzionalità non è gestita in alcuni browsers. Oltre a questo, la navigazione attraverso tastiera rimane abilitata, per cui utenti che utilizzano tecnologie assistive saranno comunque in grado di attivare tali link. Per ovviare a questo problema, è possibile aggiungere l’attributo <code class="language-plaintext highlighter-rouge">tabindex="-1"</code>, e utilizzare JavaScript per disabilitare le loro funzionalità.</p>
 
 <p>È inoltre consigliabile applicare <code class="language-plaintext highlighter-rouge">aria-hidden="true"</code> ai link disabilitati per evitare che vengano considerati nel conteggio degli elementi totali in lista fornito dagli screen reader.</p>
 
@@ -665,13 +732,12 @@ Per indicare la pagina attiva corrente utilizzare l’attributo <code class="lan
 </div>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper" aria-label="Esempio di paginazione">
   <ul class="pagination">
     <li class="page-item disabled">
       <a class="page-link" href="#" tabindex="-1" aria-hidden="true">
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"></use></svg>
-        <span class="sr-only">Pagina precedente</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+        <span class="visually-hidden">Pagina precedente</span>
       </a>
     </li>
     <li class="page-item">
@@ -685,19 +751,44 @@ Per indicare la pagina attiva corrente utilizzare l’attributo <code class="lan
     </li>
     <li class="page-item disabled">
       <a class="page-link" href="#" tabindex="-1" aria-hidden="true">
-        <span class="sr-only">Pagina successiva</span>
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"></use></svg>
+        <span class="visually-hidden">Pagina successiva</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"></use></svg>
       </a>
     </li>
   </ul>
 </nav>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper"</span> <span class="na">aria-label=</span><span class="s">"Esempio di paginazione"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+</pre></td><td class="code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper"</span> <span class="na">aria-label=</span><span class="s">"Esempio di paginazione"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item disabled"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
@@ -711,16 +802,17 @@ Per indicare la pagina attiva corrente utilizzare l’attributo <code class="lan
     <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item disabled"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h2 id="allineamento">Allineamento</h2>
 
-<p>Grazie alle <a href="/bootstrap-italia/1.x/docs/organizzare-gli-spazi/flex/">utilità di Flexbox</a>, si può allineare facilmente il blocco della paginazione.<br />
+<p>Grazie alle <a href="/bootstrap-switzerland/docs/organizzare-gli-spazi/flex/">utilità di Flexbox</a>, si può allineare facilmente il blocco della paginazione.<br />
 Sui dispositivi mobile la paginazione è centrata per default.</p>
 
 <h3 id="navigazione-centrata">Navigazione centrata</h3>
@@ -728,13 +820,12 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
 <p>Per centrare la navigazione aggiungere la classe <code class="language-plaintext highlighter-rouge">justify-content-center</code> al tag <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code>.</p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper justify-content-center" aria-label="Navigazione centrata">
   <ul class="pagination">
     <li class="page-item disabled">
       <a class="page-link" href="#" tabindex="-1" aria-hidden="true">
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"></use></svg>
-        <span class="sr-only">Pagina precedente</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+        <span class="visually-hidden">Pagina precedente</span>
       </a>
     </li>
     <li class="page-item">
@@ -746,19 +837,42 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item">
       <a class="page-link" href="#">
-        <span class="sr-only">Pagina successiva</span>
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"></use></svg>
+        <span class="visually-hidden">Pagina successiva</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"></use></svg>
       </a>
     </li>
   </ul>
 </nav>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper justify-content-center"</span> <span class="na">aria-label=</span><span class="s">"Navigazione centrata"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper justify-content-center"</span> <span class="na">aria-label=</span><span class="s">"Navigazione centrata"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item disabled"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
@@ -770,25 +884,25 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="navigazione-allineata-a-destra">Navigazione allineata a destra</h3>
 
 <p>Per allineare a destra la navigazione aggiungere la classe <code class="language-plaintext highlighter-rouge">justify-content-end</code> al tag <code class="language-plaintext highlighter-rouge">&lt;nav&gt;.</code></p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper justify-content-end" aria-label="Navigazione allineata a destra">
   <ul class="pagination">
     <li class="page-item disabled">
       <a class="page-link" href="#" tabindex="-1" aria-hidden="true">
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"></use></svg>
-        <span class="sr-only">Pagina precedente</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+        <span class="visually-hidden">Pagina precedente</span>
       </a>
     </li>
     <li class="page-item">
@@ -800,19 +914,42 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item">
       <a class="page-link" href="#">
-        <span class="sr-only">Pagina successiva</span>
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"></use></svg>
+        <span class="visually-hidden">Pagina successiva</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"></use></svg>
       </a>
     </li>
   </ul>
 </nav>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper justify-content-end"</span> <span class="na">aria-label=</span><span class="s">"Navigazione allineata a destra"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper justify-content-end"</span> <span class="na">aria-label=</span><span class="s">"Navigazione allineata a destra"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item disabled"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
@@ -824,25 +961,25 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h2 id="responsive">Responsive</h2>
 
-<p>Con i dovuti accorgimenti sopraelencati e inserendo alcune classi delle <a href="/bootstrap-italia/1.x/docs/organizzare-gli-spazi/display/">utilità display</a> si può trasformare la paginazione in base alla risoluzione del dispositivo in uso dell’utente.</p>
+<p>Con i dovuti accorgimenti sopraelencati e inserendo alcune classi delle <a href="/bootstrap-switzerland/docs/organizzare-gli-spazi/display/">utilità display</a> si può trasformare la paginazione in base alla risoluzione del dispositivo in uso dell’utente.</p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper" aria-label="Esempio di navigazione responsive della pagina">
   <ul class="pagination justify-content-center">
     <li class="page-item">
       <a class="page-link" href="#">
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"></use></svg>
-        <span class="sr-only">Pagina precedente</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+        <span class="visually-hidden">Pagina precedente</span>
       </a>
     </li>
     <li class="page-item d-none d-sm-flex">
@@ -864,19 +1001,52 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
     </li>
     <li class="page-item">
       <a class="page-link" href="#">
-        <span class="sr-only">Pagina successiva</span>
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"></use></svg>
+        <span class="visually-hidden">Pagina successiva</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"></use></svg>
       </a>
     </li>
   </ul>
 </nav>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione responsive della pagina"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+</pre></td><td class="code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione responsive della pagina"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination justify-content-center"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item d-none d-sm-flex"</span><span class="nt">&gt;</span>
@@ -898,29 +1068,29 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
     <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h2 id="funzioni-aggiuntive">Funzioni aggiuntive</h2>
 
-<p>La paginazione base può essere integrata con elementi aggiuntivi per rendere più fruibile la navigazione quando il numero di pagine è elevato. È inoltre disponbile una versione semplificata ottimizzata per dispositivi mobile.</p>
+<p>La paginazione base può essere integrata con elementi aggiuntivi per rendere più fruibile la navigazione quando il numero di pagine è elevato. È inoltre disponibile una versione semplificata ottimizzata per dispositivi mobile.</p>
 
 <h3 id="more">More</h3>
 
 <p>Quando è presente un grande numero di pagine è consigliabile visualizzare unicamente le pagine più prossime a quella corrente, inserendo delle ellissi (…) fra queste e la prima ed ultima pagina. Non essendo collegate a nessuna pagina le ellissi vanno inserite in un tag <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code>.</p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper" aria-label="Esempio di navigazione con ellissi/more">
   <ul class="pagination">
     <li class="page-item">
       <a class="page-link" href="#">
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"></use></svg>
-        <span class="sr-only">Pagina precedente</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+        <span class="visually-hidden">Pagina precedente</span>
       </a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -942,19 +1112,52 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
     <li class="page-item"><a class="page-link" href="#">50</a></li>
     <li class="page-item">
       <a class="page-link" href="#">
-        <span class="sr-only">Pagina successiva</span>
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"></use></svg>
+        <span class="visually-hidden">Pagina successiva</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"></use></svg>
       </a>
     </li>
   </ul>
 </nav>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione con ellissi/more"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+</pre></td><td class="code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione con ellissi/more"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -976,25 +1179,25 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>50<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
-<h3 id="page-changer">Page changer</h3>
+<h3 id="changer">Changer</h3>
 
-<p>Per velocizzare la navigazione è possibile inserire un menu “Page changer”.</p>
+<p>La funzionalità di changer permette di scegliere da un dropdown la quantità di record da visualizzare in una pagina.</p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper" aria-label="Esempio di navigazione con page changer">
   <ul class="pagination">
     <li class="page-item">
       <a class="page-link" href="#">
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"></use></svg>
-        <span class="sr-only">Pagina precedente</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+        <span class="visually-hidden">Pagina precedente</span>
       </a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -1012,33 +1215,82 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
     <li class="page-item"><a class="page-link" href="#">50</a></li>
     <li class="page-item">
       <a class="page-link" href="#">
-        <span class="sr-only">Pagina successiva</span>
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"></use></svg>
+        <span class="visually-hidden">Pagina successiva</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"></use></svg>
       </a>
     </li>
   </ul>
   <div class="dropdown">
-    <a class="btn btn-dropdown dropdown-toggle" href="#" role="button" id="pagerChanger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Salta alla pagina">pag. 10</a>
+    <button class="btn btn-dropdown dropdown-toggle" type="button" id="pagerChanger" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Salta alla pagina">
+    10/pagina
+    <svg class="icon icon-primary icon-sm"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-expand"></use></svg>
+    </button>
     <div class="dropdown-menu" aria-labelledby="pagerChanger">
       <div class="link-list-wrapper">
         <ul class="link-list">
-           <li><a class="list-item active" href="#" aria-current="page"><span>pag. 10</span></a></li>
-           <li><a class="list-item" href="#"><span>pag. 20</span></a></li>
-           <li><a class="list-item" href="#"><span>pag. 30</span></a></li>
-           <li><a class="list-item" href="#"><span>pag. 40</span></a></li>
-           <li><a class="list-item" href="#"><span>pag. 50</span></a></li>
+           <li><a class="list-item active" href="#" aria-current="page"><span>10/pagina</span></a></li>
+           <li><a class="dropdown-item list-item" href="#"><span>20/pagina</span></a></li>
+           <li><a class="dropdown-item list-item" href="#"><span>30/pagina</span></a></li>
+           <li><a class="dropdown-item list-item" href="#"><span>40/pagina</span></a></li>
+           <li><a class="dropdown-item list-item" href="#"><span>50/pagina</span></a></li>
         </ul>
       </div>
     </div>
   </div>
 </nav>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione con page changer"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+</pre></td><td class="code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione con page changer"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -1056,39 +1308,42 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>50<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-dropdown dropdown-toggle"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"pagerChanger"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Salta alla pagina"</span><span class="nt">&gt;</span>pag. 10<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-dropdown dropdown-toggle"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"pagerChanger"</span> <span class="na">data-bs-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Salta alla pagina"</span><span class="nt">&gt;</span>
+    10/pagina
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-expand"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">aria-labelledby=</span><span class="s">"pagerChanger"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
-           <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item active"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;&lt;span&gt;</span>pag. 10<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
-           <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>pag. 20<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
-           <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>pag. 30<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
-           <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>pag. 40<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
-           <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>pag. 50<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+           <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item active"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;&lt;span&gt;</span>10/pagina<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+           <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>20/pagina<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+           <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>30/pagina<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+           <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>40/pagina<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+           <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>50/pagina<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
         <span class="nt">&lt;/ul&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="jump-to-page">Jump to page</h3>
 
 <p>Con l’elemento aggiuntivo “Jump to page” l’utente può specificare un numero di pagina concreto.</p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper" aria-label="Esempio di navigazione con jump to page">
   <ul class="pagination">
     <li class="page-item">
       <a class="page-link" href="#">
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"></use></svg>
-        <span class="sr-only">Pagina precedente</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+        <span class="visually-hidden">Pagina precedente</span>
       </a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -1106,23 +1361,56 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
     <li class="page-item"><a class="page-link" href="#">50</a></li>
     <li class="page-item">
       <a class="page-link" href="#">
-        <span class="sr-only">Pagina successiva</span>
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"></use></svg>
+        <span class="visually-hidden">Pagina successiva</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"></use></svg>
       </a>
     </li>
   </ul>
   <div class="form-group">
     <input type="text" class="form-control" id="jumpToPage" maxlength="3" />
-    <label for="jumpToPage"><span aria-hidden="true">Vai a ...</span><span class="sr-only">Indica la pagina desiderata</span></label>
+    <label for="jumpToPage"><span aria-hidden="true">Vai a ...</span><span class="visually-hidden">Indica la pagina desiderata</span></label>
   </div>
 </nav>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione con jump to page"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+</pre></td><td class="code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione con jump to page"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -1140,80 +1428,102 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>50<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"jumpToPage"</span> <span class="na">maxlength=</span><span class="s">"3"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"jumpToPage"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>Vai a ...<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Indica la pagina desiderata<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"jumpToPage"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>Vai a ...<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Indica la pagina desiderata<span class="nt">&lt;/span&gt;&lt;/label&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="simple-mode">Simple mode</h3>
 
 <p>La paginazione in versione “Simple mode” è ottimizzata per i dispositivi mobile. Può essere utilizzata anche su tablet e desktop quando il numero di pagine è ridotto.</p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper" aria-label="Esempio di navigazione simple mode">
   <ul class="pagination" aria-label="Pagina 1 di 5">
     <li class="page-item disabled">
       <a class="page-link" href="#" tabindex="-1" aria-hidden="true">
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"></use></svg>
-        <span class="sr-only">Pagina precedente</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+        <span class="visually-hidden">Pagina precedente</span>
       </a>
     </li>
-    <li class="page-item"><span class="page-link">1</span></li>
+    <li class="page-item"><span class="page-link" aria-current="page">1</span></li>
     <li class="page-item"><span class="page-link">/</span></li>
     <li class="page-item"><span class="page-link">5</span></li>
-    <li class="page-item sr-only">
+    <li class="page-item visually-hidden">
       <a class="page-link" href="#" aria-current="page">Pagina 1 di 5</a>
     </li>
     <li class="page-item">
       <a class="page-link" href="#">
-        <span class="sr-only">Pagina successiva</span>
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"></use></svg>
+        <span class="visually-hidden">Pagina successiva</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"></use></svg>
       </a>
     </li>
   </ul>
 </nav>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione simple mode"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre></td><td class="code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione simple mode"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span> <span class="na">aria-label=</span><span class="s">"Pagina 1 di 5"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item disabled"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"page-link"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"page-link"</span><span class="nt">&gt;</span>/<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"page-link"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item sr-only"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item visually-hidden"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>Pagina 1 di 5<span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="link-testuali">Link testuali</h3>
 
-<p>Le icone chevron utilizzate come link di navigazione possono essere sostituite da link testuali come “precedente” e “successiva”. In tal caso al tag <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> contenente il testo dovrà essere aggiunta la classe <code class="language-plaintext highlighter-rouge">.text</code>. Es: <code class="language-plaintext highlighter-rouge">&lt;a class="page-link text" href="#"&gt;Precedente&lt;/a&gt;</code>.
-Notare come sia stato inserito il testo “Pagina” in un elemento <code class="language-plaintext highlighter-rouge">&lt;span class="sr-only"&gt;</code> invisibile su schermo ma enunciabile dagli screen reader per facilitare la comprensione agli utenti che utilizzano tecnologie assistive.</p>
+<p>Le icone <em>chevron</em> utilizzate come link di navigazione possono essere sostituite da link testuali come “precedente” e “successiva”. In tal caso al tag <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> contenente il testo dovrà essere aggiunta la classe <code class="language-plaintext highlighter-rouge">.text</code>. Es: <code class="language-plaintext highlighter-rouge">&lt;a class="page-link text" href="#"&gt;Precedente&lt;/a&gt;</code>.
+Notare come sia stato inserito il testo “Pagina” in un elemento <code class="language-plaintext highlighter-rouge">&lt;span class="visually-hidden"&gt;</code> invisibile su schermo ma enunciabile dagli screen reader per facilitare la comprensione agli utenti che utilizzano tecnologie assistive.</p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper" aria-label="Esempio di navigazione con link testuali">
   <ul class="pagination">
     <li class="page-item">
-      <a class="page-link text" href="#"><span class="sr-only">Pagina </span>Precedente</a>
+      <a class="page-link text" href="#"><span class="visually-hidden">Pagina </span>Precedente</a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
     <li class="page-item"><span class="page-link">...</span></li>
@@ -1229,15 +1539,38 @@ Notare come sia stato inserito il testo “Pagina” in un elemento <code class=
     <li class="page-item"><span class="page-link">...</span></li>
     <li class="page-item"><a class="page-link" href="#">50</a></li>
     <li class="page-item">
-      <a class="page-link text" href="#"><span class="sr-only">Pagina </span>Successiva</a>
+      <a class="page-link text" href="#"><span class="visually-hidden">Pagina </span>Successiva</a>
     </li>
   </ul>
 </nav>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione con link testuali"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione con link testuali"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link text"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina <span class="nt">&lt;/span&gt;</span>Precedente<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link text"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina <span class="nt">&lt;/span&gt;</span>Precedente<span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"page-link"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
@@ -1253,23 +1586,23 @@ Notare come sia stato inserito il testo “Pagina” in un elemento <code class=
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"page-link"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>50<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link text"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina <span class="nt">&lt;/span&gt;</span>Successiva<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link text"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina <span class="nt">&lt;/span&gt;</span>Successiva<span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="total-number">Total number</h3>
 
-<p>Aggiungendo al classe <code class="language-plaintext highlighter-rouge">.pagination-total</code> al tag <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code> che contiene la paginazione è possibile indicare il numero totale di pagine all’interno di un tag <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> collocato priam della chiusura del <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code>.</p>
+<p>Aggiungendo la classe <code class="language-plaintext highlighter-rouge">.pagination-total</code> al tag <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code> che contiene la paginazione è possibile indicare il numero totale di elementi o il numero totale di elementi per pagina all’interno di un tag <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> collocato priam della chiusura del <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code>.</p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper pagination-total" aria-label="Esempio di navigazione con total number">
   <ul class="pagination">
     <li class="page-item">
       <a class="page-link" href="#">
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"></use></svg>
-        <span class="sr-only">Pagina precedente</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+        <span class="visually-hidden">Pagina precedente</span>
       </a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -1287,20 +1620,50 @@ Notare come sia stato inserito il testo “Pagina” in un elemento <code class=
     <li class="page-item"><a class="page-link" href="#">50</a></li>
     <li class="page-item">
       <a class="page-link" href="#">
-        <span class="sr-only">Pagina successiva</span>
-        <svg class="icon icon-primary"><use href="/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"></use></svg>
+        <span class="visually-hidden">Pagina successiva</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"></use></svg>
       </a>
     </li>
   </ul>
-  <p><span class="sr-only">Pagina</span> 24 di 50</p>
+  <p>Totale 300 elementi </p>
 </nav>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper pagination-total"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione con total number"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre></td><td class="code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper pagination-total"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione con total number"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -1318,13 +1681,317 @@ Notare come sia stato inserito il testo “Pagina” in un elemento <code class=
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>50<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-italia/1.x/dist/svg/sprite.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
       <span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
-  <span class="nt">&lt;p&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Pagina<span class="nt">&lt;/span&gt;</span> 24 di 50<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+  <span class="nt">&lt;p&gt;</span>Totale 300 elementi <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<div class="bd-example">
+<nav class="pagination-wrapper pagination-total" aria-label="Esempio di navigazione con total number">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#">
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+        <span class="visually-hidden">Pagina precedente</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><span class="page-link">...</span></li>
+    <li class="page-item active">
+      <a class="page-link" href="#" aria-current="page">
+        <span class="d-inline-block d-sm-none">Pagina </span>24
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">25</a></li>
+    <li class="page-item"><a class="page-link" href="#">26</a></li>
+    <li class="page-item"><a class="page-link" href="#">27</a></li>
+    <li class="page-item"><a class="page-link" href="#">28</a></li>
+    <li class="page-item"><span class="page-link">...</span></li>
+    <li class="page-item"><a class="page-link" href="#">50</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">
+        <span class="visually-hidden">Pagina successiva</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"></use></svg>
+      </a>
+    </li>
+  </ul>
+  <p>100-110 di 300 elementi</p>
+</nav>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre></td><td class="code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper pagination-total"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione con total number"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"page-link"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item active"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-inline-block d-sm-none"</span><span class="nt">&gt;</span>Pagina <span class="nt">&lt;/span&gt;</span>24
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>26<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>27<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>28<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"page-link"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>50<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;p&gt;</span>100-110 di 300 elementi<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Con il posizionamento centrale</p>
+
+<div class="bd-example">
+<nav class="pagination-wrapper justify-content-center pagination-total" aria-label="Esempio di navigazione con total number">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#">
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+        <span class="visually-hidden">Pagina precedente</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><span class="page-link">...</span></li>
+    <li class="page-item active">
+      <a class="page-link" href="#" aria-current="page">
+        <span class="d-inline-block d-sm-none">Pagina </span>24
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">25</a></li>
+    <li class="page-item"><a class="page-link" href="#">26</a></li>
+    <li class="page-item"><a class="page-link" href="#">27</a></li>
+    <li class="page-item"><a class="page-link" href="#">28</a></li>
+    <li class="page-item"><span class="page-link">...</span></li>
+    <li class="page-item"><a class="page-link" href="#">50</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">
+        <span class="visually-hidden">Pagina successiva</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"></use></svg>
+      </a>
+    </li>
+  </ul>
+  <p>100-110 di 300 elementi</p>
+</nav>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre></td><td class="code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper justify-content-center pagination-total"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione con total number"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"page-link"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item active"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-inline-block d-sm-none"</span><span class="nt">&gt;</span>Pagina <span class="nt">&lt;/span&gt;</span>24
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>26<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>27<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>28<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"page-link"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>50<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;p&gt;</span>100-110 di 300 elementi<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Con il posizionamento a destra</p>
+
+<div class="bd-example">
+<nav class="pagination-wrapper justify-content-end pagination-total" aria-label="Esempio di navigazione con total number">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#">
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+        <span class="visually-hidden">Pagina precedente</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><span class="page-link">...</span></li>
+    <li class="page-item active">
+      <a class="page-link" href="#" aria-current="page">
+        <span class="d-inline-block d-sm-none">Pagina </span>24
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">25</a></li>
+    <li class="page-item"><a class="page-link" href="#">26</a></li>
+    <li class="page-item"><a class="page-link" href="#">27</a></li>
+    <li class="page-item"><a class="page-link" href="#">28</a></li>
+    <li class="page-item"><span class="page-link">...</span></li>
+    <li class="page-item"><a class="page-link" href="#">50</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">
+        <span class="visually-hidden">Pagina successiva</span>
+        <svg class="icon icon-primary"><use href="/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"></use></svg>
+      </a>
+    </li>
+  </ul>
+  <p>100-110 di 300 elementi</p>
+</nav>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+</pre></td><td class="code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"pagination-wrapper justify-content-end pagination-total"</span> <span class="na">aria-label=</span><span class="s">"Esempio di navigazione con total number"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-left"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina precedente<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"page-link"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item active"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-inline-block d-sm-none"</span><span class="nt">&gt;</span>Pagina <span class="nt">&lt;/span&gt;</span>24
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>26<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>27<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>28<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"page-link"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>50<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagina successiva<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-switzerland/dist/svg/sprites.svg#it-chevron-right"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;p&gt;</span>100-110 di 300 elementi<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 id="breaking-change">Breaking change</h2>
+
+<div class="accordion p-0 bd-callout bd-callout-danger">
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="#bsbrh2-8-0">
+      <button class="accordion-button text-black collapsed" type="button" style="border-top: none;" data-bs-toggle="collapse" data-bs-target="#bsbrc2-8-0" aria-controls="#bsbrc2-8-0">
+      Breaking change dalla versione&nbsp;<b>2.8.0</b>
+      </button>
+    </h4>
+    <div id="bsbrc2-8-0" class="accordion-collapse collapse" role="region" aria-labelledby="bsbrh2-8-0">
+      <div class="accordion-body">
+<p>Il toggle del dropdown diventa <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> invece di <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code>.</p>
+</div>
+    </div>
+  </div>
+</div>
 
 
         </main>
@@ -1332,47 +1999,138 @@ Notare come sia stato inserito il testo “Pagina” in un elemento <code class=
     </div>
 
     
-
+<script src="/bootstrap-switzerland/dist/js/bootstrap-switzerland.bundle.min.js?202507071536"></script>
 <script>
-  window.__PUBLIC_PATH__ = '/bootstrap-italia/1.x/dist/fonts'
-</script><script src="/bootstrap-italia/1.x/dist/js/bootstrap-italia.bundle.min.js?202506241154"></script><script src="/bootstrap-italia/1.x/docs/assets/dist/js/vendor/anchor.min.js"></script>
-<script src="/bootstrap-italia/1.x/docs/assets/dist/js/vendor/clipboard.min.js"></script>
-<script src="/bootstrap-italia/1.x/docs/assets/dist/js/vendor/tsparticles.min.js"></script>
+  bootstrap.loadFonts('/bootstrap-switzerland/dist/fonts')
+</script><script src="/bootstrap-switzerland/docs/assets/dist/js/docs.min.js?202507071536"></script>
+<script src="/bootstrap-switzerland/docs/assets/src/js/vendor/anchor.min.js"></script>
+<script src="/bootstrap-switzerland/docs/assets/src/js/vendor/clipboard.min.js"></script>
+<script src="/bootstrap-switzerland/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-italia/1.x/docs/assets/dist/js/docs.min.js?202506241154"></script>
+<script src="/bootstrap-switzerland/docs/assets/src/js/docs.js?202507071536"></script>
 
-<script src="/bootstrap-italia/1.x/docs/assets/dist/js/vendor/tweenjs.min.js"></script>
-<script src="/bootstrap-italia/1.x/docs/assets/dist/js/vendor/easeljs.min.js"></script>
-<script src="/bootstrap-italia/1.x/docs/assets/dist/js/vendor/preloadjs.min.js"></script>
+<script src="/bootstrap-switzerland/docs/assets/src/js/vendor/tweenjs.min.js"></script>
+<script src="/bootstrap-switzerland/docs/assets/src/js/vendor/easeljs.min.js"></script>
+<script src="/bootstrap-switzerland/docs/assets/src/js/vendor/preloadjs.min.js"></script>
 
 <script>
   var manifest = [
-    { src: '/bootstrap-italia/1.x/docs/assets/img/cover/cover-animation-1.png', id: 'cover-1' },
-    { src: '/bootstrap-italia/1.x/docs/assets/img/cover/cover-animation-2.png', id: 'cover-2' },
-    { src: '/bootstrap-italia/1.x/docs/assets/img/cover/cover-animation-3.png', id: 'cover-3' },
-    { src: '/bootstrap-italia/1.x/docs/assets/img/cover/cover-animation-4.png', id: 'cover-4' },
-    { src: '/bootstrap-italia/1.x/docs/assets/img/cover/cover-animation-5.png', id: 'cover-5' },
-    { src: '/bootstrap-italia/1.x/docs/assets/img/cover/cover-animation-6.png', id: 'cover-6' },
-    { src: '/bootstrap-italia/1.x/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
+    { src: '/bootstrap-switzerland/docs/assets/img/cover/cover-animation-1.png', id: 'cover-1' },
+    { src: '/bootstrap-switzerland/docs/assets/img/cover/cover-animation-2.png', id: 'cover-2' },
+    { src: '/bootstrap-switzerland/docs/assets/img/cover/cover-animation-3.png', id: 'cover-3' },
+    { src: '/bootstrap-switzerland/docs/assets/img/cover/cover-animation-4.png', id: 'cover-4' },
+    { src: '/bootstrap-switzerland/docs/assets/img/cover/cover-animation-5.png', id: 'cover-5' },
+    { src: '/bootstrap-switzerland/docs/assets/img/cover/cover-animation-6.png', id: 'cover-6' },
+    { src: '/bootstrap-switzerland/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>
-<script src="/bootstrap-italia/1.x/docs/assets/dist/js/cover-animation.min.js?202506241154"></script>
+<script src="/bootstrap-switzerland/docs/assets/src/js/cover-animation.js?202507071536"></script>
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 
-
-<script src="/bootstrap-italia/1.x/docs/assets/dist/js/vendor/docsearch.min.js"></script>
 <script>
   docsearch({
-    apiKey: 'a755e381c276458251a59282bae6ee93',
-    indexName: 'bootstrap_italia',
-    inputSelector: '#search-input',
-    handleSelected: function (input, event, suggestion) {
-      var url = suggestion.url
-      url = suggestion.isLvl1 ? url.split('#')[0] : url
-      // If it's a title we remove the anchor so it does not jump.
-      window.location.href = url.replace('/bootstrap-italia/', '/bootstrap-italia/1.x/')
-    },
-    debug: false, // Set debug to true if you want to inspect the dropdown
+    appId: "V0EOJ2MHD5",
+    apiKey: "7f7c26d560b352162a23c9d1476e195d",
+    indexName: "italiaio",
+    container: "#search-input",
+    placeholder: "Cerca nella documentazione",
+    debug: false,
+    translations: {
+      button: {
+        buttonText: 'Cerca componenti, classi, informazioni...',
+        buttonAriaLabel: 'Cerca nella documentazione componenti, classi, informazioni',
+      },
+      modal: {
+        searchBox: {
+          resetButtonTitle: 'Cancella la query',
+          resetButtonAriaLabel: 'Cancella la query',
+          cancelButtonText: 'Annulla',
+          cancelButtonAriaLabel: 'Annulla',
+          searchInputLabel: 'Cerca',
+        },
+        startScreen: {
+          recentSearchesTitle: 'Recenti',
+          noRecentSearchesText: 'Nessuna ricerca recente',
+          saveRecentSearchButtonTitle: 'Salva questa ricerca',
+          removeRecentSearchButtonTitle: 'Rimuovi questa ricerca dalla cronologia',
+          favoriteSearchesTitle: 'Preferiti',
+          removeFavoriteSearchButtonTitle: 'Rimuovi questa ricerca dai preferiti',
+        },
+        errorScreen: {
+          titleText: 'Impossibile recuperare i risultati',
+          helpText: 'Controlla la tua connessione di rete.',
+        },
+        footer: {
+          selectText: 'per selezionare',
+          selectKeyAriaLabel: 'Tasto Invio',
+          navigateText: 'per navigare',
+          navigateUpKeyAriaLabel: 'Freccia su',
+          navigateDownKeyAriaLabel: 'Freccia giù',
+          closeText: 'per chiudere',
+          closeKeyAriaLabel: 'Tasto Esc',
+          searchByText: 'Powered by',
+        },
+        noResultsScreen: {
+          noResultsText: 'Nessun risultato per',
+          suggestedQueryText: 'Prova a cercare',
+          reportMissingResultsText: 'Pensi che questa query dovrebbe restituire risultati?',
+          reportMissingResultsLinkText: 'Faccelo sapere.',
+        },
+      }
+
+    }
   })
+</script><script>
+  /**
+   * Aggiungo il bottone copia negli elementi di esempio codice
+   */
+  document
+    .querySelectorAll('figure.highlight, pre.highlight')
+    .forEach(function (node) {
+      const button = document.createElement('button'),
+        divContainer = document.createElement('div');
+      divContainer.classList.add('copy-button-container');
+      button.type = 'button';
+      button.ariaLabel = 'Copia il codice negli appunti';
+      button.innerText = 'Copia';
+      button.classList.add('btn', 'btn-primary', 'btn-xs');
+      button.setAttribute('type', 'button');
+      button.addEventListener('click', function () {
+        const code = node.querySelector('code td[class="code"] pre') ?? node.querySelector('code td[class="rouge-code"] pre');
+        navigator.clipboard.writeText(code.innerText.trim());
+        button.innerText = 'Copiato';
+        button.classList.remove('btn-primary');
+        button.classList.add('btn-success');
+        setTimeout(() => {
+          button.classList.remove('btn-success');
+          button.classList.add('btn-primary');
+          button.innerText = 'Copia';
+        }, 5000);
+      });
+      divContainer.appendChild(button);
+      /**
+       * Snippet
+       * <div class="bd-example">
+       * </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>       * 
+</pre></td></tr></tbody></table></code></pre></figure>
+
+       */
+      if (node.nodeName == 'FIGURE') {
+        node.insertBefore(divContainer, node.querySelector('pre'));
+      }
+      /*
+      * Snippet
+      * ```html
+      * ```
+      */
+      else if (node.nodeName == 'PRE') {
+        node.classList.remove("highlight");
+        node.insertAdjacentElement('beforebegin', divContainer);
+      }
+    });
 </script>
+
   </body>
 </html>
