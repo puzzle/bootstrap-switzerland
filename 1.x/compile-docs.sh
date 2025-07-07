@@ -2,9 +2,9 @@
 
 git clone https://github.com/puzzle/bootstrap-switzerland.git
 
-cd bootstrap-switerland
+cd bootstrap-switzerland
 
-git checkout 1.x
+git checkout feat/cd-bund # TODO change to main
 
 npm i && bundle install && npm run build && JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_production.yml
 
