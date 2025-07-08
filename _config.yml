@@ -19,15 +19,12 @@ exclude:
   - src/
   - vendor
   - node_modules/
-  - AUTHORS
   - CODE_OF_CONDUCT.md
   - CONTRIBUTING.md
   - Gemfile
   - Gemfile.lock
   - yarn.lock
-  - package.json
   - package-lock.json
-  - README.md
   - bootstrap/
 
 plugins:
