@@ -1,79 +1,49 @@
-# This repository adheres to the publiccode.yml standard by including this
-# metadata file that makes public software easily discoverable.
-# More info at https://github.com/italia/publiccode.yml
-
-publiccodeYmlVersion: '0.2'
+publiccodeYmlVersion: 0.4.0
+name: Bootstrap Switzerland
+url: https://github.com/puzzle/bootstrap-switzerland
+landingURL: https://puzzle.github.io/bootstrap-switzerland
+isBasedOn:
+  - Bootstrap
+softwareVersion: v2.16.0
+releaseDate: 2025-07-04
+platforms:
+  - web
 categories:
   - website-builder
+developmentStatus: development
+softwareType: library
 description:
-  it:
-    documentation: 'https://italia.github.io/bootstrap-italia/docs/come-iniziare/introduzione/'
+  de-CH:
+    localisedName: Bootstrap Theme
+    shortDescription: Ein Bootstrap Theme, angepasst an das Design System der
+      Schweizerischen Eidgenossenschaft
+    longDescription: >-
+      Dieses Bootstrap-Theme ist ein Fork von bootstrap-italia, angepasst an das
+      Design-System der Schweizerischen Eidgenossenschaft.
+
+
+      Weitere Informationen zum offiziellen Design-System der Schweizerischen
+      Eidgenossenschaft findet sich unter https://github.com/swiss/designsystem.
+    documentation: https://puzzle.github.io/bootstrap-switzerland
     features:
       - responsive
       - accessibility
       - inclusion
       - web development
-      - PNRR
-      - PNRR/Misura/1.4.1
-      - PNRR/Beneficiari/Comuni
-      - PNRR/Beneficiari/Scuole
-    genericName: Tema Bootstrap
-    longDescription: |
-      La libreria **Bootstrap Italia** è il modo più semplice e sicuro per
-      costruire interfacce web **moderne**, **inclusive** e **semplici da
-      mantenere**.
-
-      Completamente **open-source**, costruita sulle fondamenta di [Bootstrap
-      4.6.1](https://getbootstrap.com/docs/4.6/getting-started/introduction/ "Repository GitHub di Bootstrap") per la versione 1
-      e la versione [Bootstrap
-      5.2.3](https://getbootstrap.com/docs/5.1/getting-started/introduction/ "Repository GitHub di Bootstrap") per la versione 2 , di cui
-      eredita tutte le funzionalità, componenti, griglie e classi di utilità,
-      personalizzandole secondo le indicazioni delle "[Linee guida di design per i siti internet e i servizi digitali della
-      Pubblica
-      Amministrazione](https://docs.italia.it/italia/design/lg-design-servizi-web/)" e del relativo "[Manuale operativo di design](https://designers.italia.it/linee-guida)" a supporto disponibile sul sito Designers Italia.
-
-      **Bootstrap Italia** usa
-      i pattern e i componenti definiti nello [UI Kit di Designers
-      Italia](https://designers.italia.it/kit/ui-kit/ "User Interface Kit") e li
-      trasforma in codice già pronto all'uso!
-    shortDescription: |-
-      La libreria Bootstrap Italia è il modo più semplice e sicuro per costruire
-      interfacce web moderne, inclusive e semplici da mantenere.
-developmentStatus: stable
-isBasedOn:
-  - Bootstrap
-it:
-  conforme:
-    gdpr: false
-    lineeGuidaDesign: false
-    misureMinimeSicurezza: false
-    modelloInteroperabilita: false
-  countryExtensionVersion: '0.2'
-  piattaforme:
-    anpr: false
-    cie: false
-    pagopa: false
-    spid: false
-  riuso:
-    codiceIPA: pcm
-landingURL: 'https://italia.github.io/bootstrap-italia'
 legal:
-  authorsFile: 'https://raw.githubusercontent.com/italia/bootstrap-italia/main/AUTHORS'
   license: BSD-3-Clause
-  mainCopyrightOwner: Presidenza del Consiglio dei Ministri
+maintenance:
+  type: community
+  contacts:
+    - name: Olivier Brian
+      email: brian@puzzle.ch
+      phone: ""
+      affiliation: ""
+    - name: Claudia Asti
+      email: asti@puzzle.ch
+      phone: ""
+      affiliation: ""
 localisation:
+  localisationReady: false
   availableLanguages:
     - it
-  localisationReady: false
-maintenance:
-  contacts:
-    - name: Designers Italia
-  type: community
-name: Bootstrap Italia
-platforms:
-  - web
-releaseDate: '2025-06-24'
-roadmap: 'https://designers.italia.it/piano-attivita/'
-softwareType: library
-softwareVersion: v2.16.0
-url: 'https://github.com/italia/bootstrap-italia'

@@ -13,7 +13,7 @@ export default [
   {
     input: 'src/js/bootstrap-italia.entry.js',
     output: {
-      file: 'dist/js/bootstrap-italia.bundle.min.js',
+      file: 'dist/js/bootstrap-switzerland.bundle.min.js',
       format: 'umd',
       generatedCode: 'es2015',
       name: "bootstrap"
@@ -33,7 +33,7 @@ export default [
         outputFolder: 'dist/svg',
       }),
       scss({
-        output: 'dist/css/bootstrap-italia.min.css',
+        output: 'dist/css/bootstrap-switzerland.min.css',
         outputStyle: 'compressed',
         sourceMap: true,
         watch: 'src/scss',
@@ -51,7 +51,7 @@ export default [
     input: 'src/js/bootstrap-italia.entry.js',
     watch: false,
     output: {
-      file: 'dist/js/bootstrap-italia.min.js',
+      file: 'dist/js/bootstrap-switzerland.min.js',
       format: 'umd',
       generatedCode: 'es2015',
       name: "bootstrap",
@@ -83,7 +83,7 @@ export default [
         outputFolder: 'dist/svg',
       }),
       scss({
-        output: 'dist/css/bootstrap-italia.min.css',
+        output: 'dist/css/bootstrap-switzerland.min.css',
         outputStyle: 'compressed',
         sourceMap: true,
         watch: 'src/scss',

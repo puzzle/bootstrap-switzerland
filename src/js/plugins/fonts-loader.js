@@ -258,6 +258,35 @@ export default (path = '/node_modules/bootstrap-italia/dist/fonts') => {
         url('${__PUBLIC_PATH__}/Roboto_Mono/roboto-mono-v13-latin-ext_latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
         url('${__PUBLIC_PATH__}/Roboto_Mono/roboto-mono-v13-latin-ext_latin-700italic.svg#RobotoMono') format('svg'); /* Legacy iOS */
   }
+
+  /* Noto Sans Regular */
+  @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 500;
+      src: local(''), url('${__PUBLIC_PATH__}/Noto_Sans/NotoSans-Regular.ttf') format('ttf');
+  }
+  /* Noto Sans Bold */
+  @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 600;
+      src: local(''), url('${__PUBLIC_PATH__}/Noto_Sans/NotoSans-Bold.ttf') format('ttf');
+  }
+  /* Noto Sans Italic */
+  @font-face {
+      font-family: 'Noto Sans';
+      font-style: italic;
+      font-weight: 500;
+      src: local(''), url('${__PUBLIC_PATH__}/Noto_Sans/NotoSans-Italic.ttf') format('ttf');
+  }
+  /* Noto Sans Bold Italic */
+  @font-face {
+      font-family: 'Noto Sans';
+      font-style: italic;
+      font-weight: 600;
+      src: local(''), url('${__PUBLIC_PATH__}/Noto_Sans/NotoSans-BoldItalic.ttf') format('ttf');
+}
   `
   document.getElementsByTagName('head')[0].appendChild(styleNode)
 }

@@ -10,19 +10,21 @@
 $black: hsl(0, 0%, 0%) !default;
 $white: hsl(0, 0%, 100%) !default;
 
-$gray-100: hsl(0, 0%, 96%) !default; // color-gray-96
-$gray-200: hsl(0, 0%, 90%) !default; // color-gray-90
-$gray-300: hsl(0, 0%, 83%) !default; // color-gray-83
-$gray-400: hsl(0, 0%, 64%) !default; // color-gray-64
-$gray-500: hsl(0, 0%, 45%) !default; // color-gray-45
-$gray-600: hsl(0, 0%, 32%) !default; // color-gray-32
-$gray-700: hsl(0, 0%, 25%) !default; // color-gray-25
-$gray-800: hsl(0, 0%, 15%) !default; // color-gray-15
-$gray-900: hsl(0, 0%, 10%) !default; // color-gray-10
+$gray-50: hsl(206, 30%, 95%) !default; // secondary 50
+$gray-100: hsl(210, 19%, 89%) !default; // secondary 100
+$gray-200: hsl(212, 11%, 71%) !default; // secondary 200
+$gray-300: hsl(210, 11%, 56%) !default; // secondary 300
+$gray-400: hsl(209, 15%, 41%) !default; // secondary 400
+$gray-500: hsl(209, 21%, 35%) !default; // secondary 500
+$gray-600: hsl(209, 29%, 26%) !default; // secondary 600
+$gray-700: hsl(209, 29%, 21%) !default; // secondary 700
+$gray-800: hsl(210, 30%, 16%) !default; // secondary 800
+$gray-900: hsl(208, 28%, 10%) !default; // secondary 900
 
 $grays: () !default;
 $grays: map-merge(
   (
+    '50': $gray-50,
     '100': $gray-100,
     '200': $gray-200,
     '300': $gray-300,
@@ -49,25 +51,25 @@ $color-contrast-dark: $black !default;
 $color-contrast-light: $white !default;
 
 // PRIMARY COLORS DEFINITION //
-$primary-h: 210 !default;
-$primary-s: 100 !default;
-$primary-b: 80 !default;
-$primary-l: 40 !default; // Kit UI
+$primary-h: 358 !default;
+$primary-s: 84 !default;
+$primary-b: 85 !default;
+$primary-l: 85 !default; // Kit UI
 
-$primary: hsb($primary-h, $primary-s, $primary-b) !default; // color-blue-40
+$primary: hsb($primary-h, $primary-s, $primary-b) !default; // primary 600
 
 $indigo: hsb(243, 70, 100) !default;
 $purple: hsb(243, 40, 100) !default;
 $pink: hsb(350, 30, 100) !default;
-$red: hsl(350, 60%, 50%) !default; // color-red-50
-$orange: hsl(36, 100%, 30%) !default; // color-orange-30
+$red: $primary !default; // primary 600
+$orange: hsl(15 ,79% ,34%) !default; // orange 700
 $yellow: hsb(44, 55, 100) !default;
-$green: hsl(160, 100%, 25%) !default; // color-emerald-25
+$green: hsl(163 ,94% ,24%) !default; // green 700
 $teal: hsl(178, 90%, 32%) !default;
 $cyan: hsb(178, 100, 100) !default;
 $blue: hsb(210, 100, 90) !default;
 $light: hsb(255, 5, 95) !default;
-$dark: hsl(210, 54%, 20%) !default; // color-slate-20
+$dark: $gray-600 !default; // secondary 600
 
 $yiq-text-light: $white !default;
 $yiq-text-dark: $black !default;
@@ -78,7 +80,7 @@ $yellow-accessible: hsb(44, 100, 59) !default;
 $green-accessible: $green !default;
 
 $gray-primary: hsb(210, 38.9, 44.3) !default;
-$gray-secondary: hsl(210, 17%, 44%) !default; // color-slate-44
+$gray-secondary: $gray-600 !default; // secondary 600
 $gray-tertiary: hsb(205, 35, 54) !default;
 $gray-quaternary: hsb(238, 1, 100) !default;
 $gray-border: hsl(210, 4%, 78%) !default; // color-border-subtle
@@ -423,12 +425,12 @@ $color-border-subtle: hsl(210, 4%, 78%); // color-slate-78
 $color-border-warning: hsl(36, 100%, 30%); // color-orange-30
 
 // Text
-$color-text-primary-active: hsl(210, 100%, 15%); // color-blue-15
-$color-text-primary-hover: hsl(210, 100%, 30%); // color-blue-30
-$color-text-muted: hsl(210, 17%, 44%); // color-slate-44
-$color-text-base: $gray-900; // color-gray-10
-$color-text-secondary: hsl(210, 33%, 28%); // color-slate-28
-$color-text-warning: hsl(36, 100%, 30%); // color-orange-30
+$color-text-primary-active: hsl(358, 72%, 49%); // primary 600
+$color-text-primary-hover: hsl(358, 72%, 35%); // primary 800
+$color-text-muted: hsl(220, 9%, 46%); // text 500
+$color-text-base: hsl(215, 28%, 17%); // text 800
+$color-text-secondary: hsl(217, 19%, 27%); // text 700
+$color-text-warning: hsl(15, 79%, 34%); // orange 800
 
 // SPECIFIC TOKENS =========================================================
 //
@@ -632,11 +634,11 @@ $display-font-weight: 300 !default;
 $display-line-height: $headings-line-height !default;
 
 // Border Radius - using pixels instead or rems as it has to be consistent across devices
-$border-radius: 4px !default;
-$border-radius-sm: 2px !default;
-$border-radius-lg: 8px !default;
-$border-radius-xl: 1rem !default;
-$border-radius-2xl: 2rem !default;
+$border-radius: 1px !default;
+$border-radius-sm: 1px !default;
+$border-radius-lg: 1px !default;
+$border-radius-xl: 1px !default;
+$border-radius-2xl: 1px !default;
 $border-radius-pill: 50rem !default;
 $radius-rounded: 40px;
 
@@ -680,7 +682,7 @@ $aspect-ratios: (
 
 // Text
 $font-family-serif: 'Lora', Georgia, serif !default;
-$font-family-sans-serif: 'Titillium Web', Geneva, Tahoma, sans-serif !default;
+$font-family-sans-serif: 'Noto Sans', 'Titillium Web', Geneva, Tahoma, sans-serif !default;
 $font-family-monospace: 'Roboto Mono', monospace !default;
 $text-color: $gray-700 !default;
 $text-muted: $color-text-muted !default;
@@ -770,7 +772,7 @@ $btn-text-transform: uppercase;
 $btn-letter-spacing: normal;
 $btn-font-family: $input-btn-font-family !default;
 $btn-font-size: $input-btn-font-size !default;
-$btn-font-weight: 600 !default;
+$btn-font-weight: 500 !default;
 $btn-font-size-sm: 1rem !default;
 $btn-font-size-xs: 0.875rem !default;
 $btn-font-size-lg: 1.125rem !default;
@@ -869,7 +871,7 @@ $input-transition:
   border-color 0.15s ease-in-out,
   box-shadow 0.15s ease-in-out !default;
 
-$input-border: $gray-secondary !default;
+$input-border: $gray-border !default;
 $input-label-color: $color-text-base !default; // UI kit
 $input-color-placeholder: $color-text-muted !default; // UI Kit
 $input-focus-border-color: $gray-secondary !default;
@@ -1788,10 +1790,10 @@ $modal-popconfirm-max-width: 300px;
 // Header Slim
 $header-general-padding: $v-gap * 3;
 $header-slim-height: 48px;
-$header-slim-bg-color: $primary-a7 !default;
+$header-slim-bg-color: $secondary !default;
 $header-slim-text-color: $white !default;
-$header-slim-button-color: $primary-a9 !default;
-$header-slim-button-hover-color: $primary-a8 !default;
+$header-slim-button-color: $gray-400 !default;
+$header-slim-button-hover-color: $gray-600 !default;
 $header-slim-brand-text-size: 0.875rem;
 $header-slim-icon-size: 18px;
 $header-slim-padding-desk: 3px $v-gap * 3;
@@ -1834,7 +1836,7 @@ $header-center-text-size: 0.875rem;
 $header-center-button-left: 10px;
 $header-nav-button-distance: 22px;
 $header-nav-icon-arrow-megamenu-distance: 14px;
-$header-center-small-height: 104px;
+$header-center-small-height: 64px;
 $header-center-small-mob-height: 64px;
 $header-center-small-h2-size: 1.25rem;
 $header-center-small-h3-size: 0.75rem;

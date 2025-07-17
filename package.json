@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-italia",
+  "name": "bootstrap-switzerland",
   "version": "2.16.0",
   "keywords": [
     "css",
@@ -18,10 +18,10 @@
     "dist/bootstrap-italia.esm.js",
     "dist/plugins/init.js"
   ],
-  "description": "Bootstrap Italia è un tema Bootstrap 5 per la creazione di applicazioni web nel pieno rispetto delle linee guida di design per i siti internet e i servizi digitali della PA",
+  "description": "Bootstrap Switzerland ist ein Fork von Bootstrap Italia. Das Theme wurde auf Basis des Swiss Design Systems neu gestaltet.",
   "homepage": "https://italia.github.io/bootstrap-italia/",
-  "style": "dist/css/bootstrap-italia.min.css",
-  "main": "dist/js/bootstrap-italia.bundle.min.js",
+  "style": "dist/css/bootstrap-switzerland.min.css",
+  "main": "dist/js/bootstrap-switzerland.bundle.min.js",
   "scripts": {
     "start": "concurrently \"npm run dev-code\" \"npm run dev-docs\" \"npm run start-bs\"",
     "build": "rollup -c",
@@ -30,7 +30,7 @@
     "dev-docs": "bundle exec jekyll build --watch --incremental --drafts --config _config.yml --force_polling",
     "documentation-build": "bundle exec jekyll build",
     "documentation-serve": "bundle exec jekyll serve",
-    "documentation-deploy-to-gh-pages": "JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_production.yml && ./compile-docs.sh && gh-pages -d _site -m 'chore: update documentation'",
+    "documentation-deploy-to-gh-pages": "JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_production.yml && gh-pages -d _site -m 'chore: update documentation'",
     "lint-js": "eslint ./src/js ./docs/assets/src/js/",
     "lint-scss": "stylelint ./src/scss/ ./docs/assets/src/scss/",
     "fix-js": "eslint ./src/js ./docs/assets/src/js/ --fix",
@@ -43,7 +43,7 @@
     "test-a11y": "npx pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-find ^/ --sitemap-replace 'http://localhost:4000/'",
     "test-a11y-one": "npx pa11y-ci"
   },
-  "repository": "https://github.com/italia/bootstrap-italia",
+  "repository": "https://github.com/puzzle/bootstrap-switzerland",
   "author": "Presidenza del Consiglio dei Ministri",
   "license": "BSD-3-Clause",
   "files": [

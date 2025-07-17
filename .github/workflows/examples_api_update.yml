@@ -1,7 +1,7 @@
 name: Update examples API
 on:
-  schedule:
-    - cron:  '00 17 * * *'
+#  schedule:
+#    - cron:  '00 17 * * *'
   workflow_dispatch:
 jobs:
   build:
@@ -14,7 +14,7 @@ jobs:
       run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
     - uses: actions/setup-python@v4
       with:
-        python-version: '3.10' 
+        python-version: '3.10'
         cache: 'pip'
     - run: pip install -r requirements.txt
     - name: Add components status
@@ -25,7 +25,7 @@ jobs:
     - name: Setup Git
       uses: fregante/setup-git-user@v1
     - name: Add API stuff
-      run: | 
+      run: |
         git add api/
         git commit -m "chore: update examples api"
     - name: Create Pull Request
