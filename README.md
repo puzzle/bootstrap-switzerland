@@ -1,3 +1,9 @@
+# This Repository is archived!
+
+This repository contains the proof of concept of the oss-catalog developed for the swiss government.
+The new repository lives here: https://github.com/swiss/bootstrap-switzerland
+
+
 # Bootstrap Switzerland
 
 This project is a fork of  [italia/bootstrap-italia](https://github.com/italia/bootstrap-italia), customized to align with the Design System of the Swiss Confederation 🇨🇭.
